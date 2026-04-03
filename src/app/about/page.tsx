@@ -36,7 +36,7 @@ export default function About() {
           <div className="md:col-span-4 bg-surface-container-lowest p-12 md:-ml-24 relative z-10">
             <span className="font-label tracking-[0.2em] uppercase text-[10px] text-secondary mb-4 block">Founder & Lead Photographer</span>
             <h1 className="font-headline text-5xl md:text-7xl leading-[1.1] mb-6">Akshay <span className="italic">Kumar</span></h1>
-            <p className="font-body text-on-surface-variant leading-relaxed mb-8">Photographer, videographer, and storyteller. Every frame is a piece of the story.</p>
+            <p className="font-body text-on-surface-variant leading-relaxed mb-8">I'm the guy behind the camera at every wedding, every shoot, every late-night edit session. And I wouldn't have it any other way.</p>
           </div>
         </div>
       </section>
@@ -59,10 +59,11 @@ export default function About() {
       <section className="px-8 max-w-7xl mx-auto mb-40">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
           <AnimatedSection>
-            <h2 className="font-headline text-4xl mb-8">Our Story</h2>
+            <h2 className="font-headline text-4xl mb-8">Why I Do This</h2>
             <div className="space-y-6 text-on-surface-variant leading-loose font-body text-lg">
-              <p>Akshay Kumar Studios was born from a simple belief: the best photographs are the ones you don&apos;t see coming. What started as a passion for capturing real, unscripted moments has grown into a studio trusted by couples, families, and brands who value authenticity over artifice.</p>
-              <p>We don&apos;t just document events — we archive legacies. Every wedding, every portrait session, every project is approached with the same intention: to create images that feel like memories before they&apos;re even taken. Our work is rooted in genuine human connection, and that&apos;s what sets us apart.</p>
+              <p>I didn't start this studio because I wanted to be a business owner. I started it because I couldn't stop photographing people — their real selves, not the versions they perform for the camera.</p>
+              <p>Every wedding I shoot, every family session, every portrait — I approach it the same way: <strong>what would make someone cry looking at this in twenty years?</strong> That's the standard. Not awards, not Instagram likes, not magazine features. The moment your kid looks at their parents' wedding photos and actually feels something.</p>
+              <p>That's what I'm here for. That's what Akshay Kumar Studios is built on.</p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay="stagger-1">
@@ -87,20 +88,18 @@ export default function About() {
 
       {/* Meet Everyone — The Collective */}
       <section className="px-8 max-w-7xl mx-auto mb-40">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="text-center mb-16">
           <AnimatedSection>
-            <span className="font-label tracking-[0.2em] uppercase text-[10px] text-secondary mb-4 block">The People Behind the Lens</span>
-            <h2 className="font-headline text-4xl">Meet Everyone</h2>
-          </AnimatedSection>
-          <AnimatedSection delay="stagger-1">
-            <p className="font-body text-on-surface-variant max-w-xs text-sm leading-relaxed">The heart and soul of Akshay Kumar Studios.</p>
+            <span className="font-label tracking-[0.2em] uppercase text-[10px] text-secondary mb-4 block">The Person Behind the Lens</span>
+            <h2 className="font-headline text-4xl">Meet Akshay</h2>
+            <p className="font-body text-on-surface-variant max-w-sm mx-auto text-sm leading-relaxed mt-4">One guy, one camera, one obsession with real moments.</p>
           </AnimatedSection>
         </div>
-        <div className="max-w-md">
+        <div className="max-w-md mx-auto text-center">
           {/* Akshay Kumar */}
           <AnimatedSection>
             <div className="group">
-              <div className="aspect-[3/4] overflow-hidden mb-6 relative">
+              <div className="aspect-[3/4] overflow-hidden mb-6 relative max-w-sm mx-auto">
                 <Image
                   src="/photos/me/Pinch_shoot_Headshot.jpeg"
                   alt="Akshay Kumar"
@@ -113,7 +112,7 @@ export default function About() {
               </div>
               <h3 className="font-headline text-2xl mb-1">Akshay Kumar</h3>
               <p className="font-label tracking-widest uppercase text-[10px] text-secondary mb-4">Photography / Videography / Production — Founder & Sole Owner</p>
-              <p className="font-body text-on-surface-variant text-sm leading-relaxed">A visionary storyteller who sees every wedding like a movie — every glance, every laugh, every tear tells a story. Akshay is the guy who&apos;ll make sure your love story looks straight out of a fairytale. When he&apos;s not behind the camera, you&apos;ll find him binge-watching classic films or hunting for the best pizza in town. Your best friend by the end of wedding week.</p>
+              <p className="font-body text-on-surface-variant text-sm leading-relaxed max-w-md mx-auto">A visionary storyteller who sees every wedding like a movie — every glance, every laugh, every tear tells a story. Akshay is the guy who'll make sure your love story looks straight out of a fairytale. When he's not behind the camera, you'll find him binge-watching classic films or hunting for the best pizza in town. Your best friend by the end of wedding week.</p>
             </div>
           </AnimatedSection>
         </div>
@@ -129,7 +128,7 @@ export default function About() {
             <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
                 <h4 className="font-bold text-[11px] tracking-widest uppercase mb-4">Real Moments, Real Emotions</h4>
-                <p className="font-body text-on-surface-variant text-sm leading-relaxed">We don&apos;t stage or force anything. Our approach is rooted in being present, reading the room, and capturing what&apos;s actually happening — the laughter, the tears, the quiet glances that tell the real story.</p>
+                <p className="font-body text-on-surface-variant text-sm leading-relaxed">We don't stage or force anything. Our approach is rooted in being present, reading the room, and capturing what's actually happening — the laughter, the tears, the quiet glances that tell the real story.</p>
               </div>
               <div>
                 <h4 className="font-bold text-[11px] tracking-widest uppercase mb-4">The In-Between Moments</h4>
@@ -141,7 +140,7 @@ export default function About() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] tracking-widest uppercase mb-4">Your Best Friend by Wedding Week</h4>
-                <p className="font-body text-on-surface-variant text-sm leading-relaxed">We don&apos;t just show up and shoot. We get to know you, your story, and what matters most. By the time your wedding day arrives, we feel like part of the family.</p>
+                <p className="font-body text-on-surface-variant text-sm leading-relaxed">We don't just show up and shoot. We get to know you, your story, and what matters most. By the time your wedding day arrives, we feel like part of the family.</p>
               </div>
             </div>
           </div>

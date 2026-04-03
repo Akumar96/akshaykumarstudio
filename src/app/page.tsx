@@ -40,13 +40,13 @@ export default function Home() {
               <span className="tracking-widest uppercase text-[11px] font-medium">Fine Art Photography & Film</span>
             </div>
             <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.9] text-primary">
-              Capturing the <br /> <span className="italic font-normal">Soul</span> of the <br /> Maritimes.
+              Your story <br /> <span className="italic font-normal">deserves</span> to be <br /> told right.
             </h1>
             <p className="text-on-surface-variant max-w-lg text-lg font-light leading-relaxed mt-8 mb-10">
-              An archive of light, shadow, and salt air. Based in Halifax, capturing timeless editorial stories through a cinematic lens.
+              We don't do posed, stiff, or fake. We show up, blend in, and photograph the moments you'll actually cry looking at — the ones you didn't even know happened.
             </p>
             <Link href="/portfolio" className="inline-flex items-center gap-4 group">
-              <span className="tracking-widest uppercase text-[11px] font-semibold border-b border-primary pb-1 group-hover:opacity-60 transition-opacity">View Portfolio</span>
+              <span className="tracking-widest uppercase text-[11px] font-semibold border-b border-primary pb-1 group-hover:opacity-60 transition-opacity">See Our Work</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 group-hover:translate-x-2 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
             </Link>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
           <AnimatedSection delay="stagger-1">
             <span className="text-[10px] uppercase tracking-widest text-secondary font-bold">Editorial / 2024</span>
             <h2 className="text-3xl md:text-4xl mt-3 serif">The Minimalist Monologue</h2>
-            <p className="text-on-surface-variant font-light mt-4 max-w-xl">Documenting the intimate moments and grand landscapes that define life on the coast.</p>
+            <p className="text-on-surface-variant font-light mt-4 max-w-xl">The vastest landscapes produce the most intimate images. Here's why the coast and the people on it are inseparable.</p>
           </AnimatedSection>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function Home() {
           <AnimatedSection>
             <span className="text-[10px] uppercase tracking-widest text-secondary font-bold">Technical Craft</span>
             <h2 className="text-3xl md:text-4xl mt-3 serif">The Grain of Time</h2>
-            <p className="text-on-surface-variant font-light mt-4 max-w-xl">Why we choose 35mm film for maritime wedding documentation.</p>
+            <p className="text-on-surface-variant font-light mt-4 max-w-xl">Why we shoot 35mm film for weddings — and what grain, limitation, and physical media bring to your day.</p>
           </AnimatedSection>
         </div>
         <AnimatedSection>
@@ -119,9 +119,9 @@ export default function Home() {
       <section className="bg-primary-container py-40 px-8">
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-surface text-3xl md:text-5xl serif italic mb-8">&quot;Light is the only language we need to speak.&quot;</h3>
-            <p className="text-secondary-fixed-dim font-light leading-relaxed mb-10 max-w-lg mx-auto">Discover our award-winning cinematography services for high-end brands and intimate events.</p>
-            <Link href="/portfolio" className="text-surface tracking-widest uppercase text-[11px] font-medium border-b border-surface/30 pb-2 hover:border-surface transition-all">Explore Film Works</Link>
+            <h3 className="text-surface text-3xl md:text-5xl serif italic mb-8">&quot;Our goal is to capture beautiful in-between moments — the ones that make your story so special.&quot;</h3>
+            <p className="text-secondary-fixed-dim font-light leading-relaxed mb-10 max-w-lg mx-auto">Be your true self. Show your fun, quirky personality. Laugh loudly. Kiss slowly. Hug tightly. We'll handle the rest.</p>
+            <Link href="/portfolio" className="text-surface tracking-widest uppercase text-[11px] font-medium border-b border-surface/30 pb-2 hover:border-surface transition-all">See What We Mean</Link>
           </div>
         </AnimatedSection>
       </section>
@@ -130,8 +130,8 @@ export default function Home() {
       <section className="bg-surface">
         <div className="container mx-auto px-8 py-40">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl mb-6">Our <span className="italic text-secondary">Expertise</span></h2>
-            <p className="text-on-surface-variant font-light max-w-xl">Tailored visual experiences for those who value the intersection of art and documentation.</p>
+            <h2 className="text-4xl md:text-5xl mb-6">What We <span className="italic text-secondary">Do</span></h2>
+            <p className="text-on-surface-variant font-light max-w-xl">Real people. Real moments. No posing, no awkwardness — just you, being you.</p>
           </AnimatedSection>
         </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
               <Image
                 src="/photos/wedding-1/DSC05542.jpg"
-                alt="Coastal weddings"
+                alt="Wedding photography"
                 fill
                 className="object-cover"
                 sizes="50vw"
@@ -151,9 +151,9 @@ export default function Home() {
           </AnimatedSection>
           <div className="bg-surface-container-low flex items-center p-12 md:p-20">
             <AnimatedSection delay="stagger-1">
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Fine Art Portraits</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Coastal Weddings</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Documenting love against the backdrop of Nova Scotia&apos;s wild landscapes. Unposed, raw, and deeply romantic.</p>
+              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Weddings & Events</span>
+              <h3 className="text-3xl md:text-display-3 serif mb-6">Your Day, Your Way</h3>
+              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">We blend into your celebration like family. No awkward direction, no stiff poses — just the real, unfiltered magic of your day. The stolen glances, the heartfelt embraces, the aunties dancing like nobody's watching (we're watching, and it's beautiful).</p>
             </AnimatedSection>
           </div>
         </div>
@@ -162,16 +162,16 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-surface-container-low flex items-center p-12 md:p-20 order-2 md:order-1">
             <AnimatedSection>
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Editorial Branding</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Brand Narratives</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Crafting visual identities that resonate. We tell the stories of brands through an editorial lens.</p>
+              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Portraits & Brands</span>
+              <h3 className="text-3xl md:text-display-3 serif mb-6">Who You Actually Are</h3>
+              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Not the LinkedIn version. The real you — the one your friends know, the one your partner fell for. Whether it's personal branding, family portraits, or editorial work, we create images that feel like memories before they're even taken.</p>
             </AnimatedSection>
           </div>
           <AnimatedSection delay="stagger-1">
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden order-1 md:order-2">
               <Image
                 src="/photos/wedding-2/DSC02061.jpg"
-                alt="Brand work"
+                alt="Portrait work"
                 fill
                 className="object-cover"
                 sizes="50vw"
@@ -187,7 +187,7 @@ export default function Home() {
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
               <Image
                 src="/photos/city/DSC01984.JPG"
-                alt="Artist archives"
+                alt="Film and video"
                 fill
                 className="object-cover"
                 sizes="50vw"
@@ -197,9 +197,9 @@ export default function Home() {
           </AnimatedSection>
           <div className="bg-surface-container-low flex items-center p-12 md:p-20">
             <AnimatedSection delay="stagger-1">
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Cinematic Film</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Artist Archives</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Showcasing the process behind the craft. We tell the stories of Halifax&apos;s most creative minds.</p>
+              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Film & Video</span>
+              <h3 className="text-3xl md:text-display-3 serif mb-6">Moving Pictures That Move You</h3>
+              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Photographs are one thing — but hearing your vows again, seeing your mom's reaction in motion, reliving the chaos and joy of your sangeet? That hits different. We shoot cinematic films that make you feel it all over again.</p>
             </AnimatedSection>
           </div>
         </div>
@@ -209,8 +209,8 @@ export default function Home() {
       <section className="bg-surface-container-low">
         <div className="container mx-auto px-8 py-40">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl mb-6">Portfolio <span className="italic text-secondary">Collections</span></h2>
-            <p className="text-on-surface-variant font-light max-w-xl">Click through curated sets from our archive.</p>
+            <h2 className="text-4xl md:text-5xl mb-6">Our <span className="italic text-secondary">Work</span></h2>
+            <p className="text-on-surface-variant font-light max-w-xl">Click through curated sets from our archive — weddings, families, streets, and everything in between.</p>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
             {[
@@ -254,13 +254,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-7">
               <AnimatedSection>
-                <span className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-8 block">The Visionary</span>
-                <h2 className="text-4xl md:text-6xl mb-10 leading-tight">Authenticity is the <br /> <span className="italic">only medium</span> that matters.</h2>
+                <span className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-8 block">The Person Behind the Lens</span>
+                <h2 className="text-4xl md:text-6xl mb-10 leading-tight">I'm not here to <br /> <span className="italic">direct</span> your day.</h2>
                 <p className="text-on-surface-variant text-lg font-light leading-relaxed mb-10 max-w-xl">
-                  Founded by Akshay Kumar, Akshay Kumar Studios is a studio dedicated to the preservation of atmosphere. We don&apos;t just take pictures; we capture the feeling of the Atlantic—the quiet before the storm, the warmth of a hearth, the salt on the skin.
+                  I'm here to witness it. Founded by Akshay Kumar, Akshay Kumar Studios is built on one simple belief: the best photographs are the ones you don't see coming. No posing. No awkward directions. Just real moments, captured by someone who genuinely cares about your story.
                 </p>
                 <Link href="/about" className="inline-flex items-center gap-4 group">
-                  <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1">Our Philosophy</span>
+                  <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1">Get to Know Me</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 group-hover:translate-x-2 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                 </Link>
               </AnimatedSection>
@@ -287,9 +287,9 @@ export default function Home() {
       <section className="py-48 bg-surface">
         <div className="container mx-auto px-8 text-center">
           <AnimatedSection>
-            <h2 className="text-5xl md:text-7xl lg:text-display-1 serif mb-12 leading-tight">Ready to document <br /> <span className="italic font-normal">your history?</span></h2>
+            <h2 className="text-5xl md:text-7xl lg:text-display-1 serif mb-12 leading-tight">Ready to tell <br /> <span className="italic font-normal">your story?</span></h2>
             <Link href="/booking" className="inline-flex items-center gap-4 group">
-              <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1 group-hover:opacity-60 transition-opacity">Start a Project</span>
+              <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1 group-hover:opacity-60 transition-opacity">Let's Talk</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 group-hover:translate-x-2 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
             </Link>
           </AnimatedSection>

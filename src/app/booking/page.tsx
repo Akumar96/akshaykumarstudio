@@ -23,16 +23,16 @@ export default function Booking() {
       <section className="px-8 max-w-7xl mx-auto mb-32 grid md:grid-cols-12 gap-8 items-end pt-4">
         <div className="md:col-span-7">
           <span className="tracking-widest uppercase text-[11px] text-secondary block mb-6">Reservation & Inquiries</span>
-          <h1 className="text-5xl md:text-7xl leading-[1.1] mb-8">Capturing the <br /><span className="italic">Quiet Moments</span> of Life.</h1>
+          <h1 className="text-5xl md:text-7xl leading-[1.1] mb-8">Let's make <br /><span className="italic">something real</span> together.</h1>
           <p className="text-on-surface-variant max-w-md text-lg leading-relaxed">
-            Every commission is approached as a unique visual monograph. We prioritize authenticity over artifice, and light over trends.
+            Your wedding is all about you, your family, and the people who matter most. Be your true self. Show your fun, quirky personality. We'll handle the rest.
           </p>
         </div>
         <div className="md:col-span-5 hidden md:block">
           <div className="aspect-[4/5] overflow-hidden relative">
             <Image
               src="/photos/nature/DSC01643.JPG"
-              alt="Coastal cliff"
+              alt="Coastal landscape"
               fill
               className="object-cover"
               sizes="40vw"
@@ -46,14 +46,14 @@ export default function Booking() {
       <section className="px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
         {/* Contact Form Side */}
         <div className="p-8 md:p-12">
-          <h2 className="text-3xl mb-12 font-serif italic border-b border-outline-variant/20 pb-6">Commission a Story</h2>
+          <h2 className="text-3xl mb-12 font-serif italic border-b border-outline-variant/20 pb-6">Tell Us About Your Day</h2>
           <form className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex flex-col gap-2">
                 <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Full Name</label>
                 <input
                   className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 transition-colors placeholder:text-outline-variant/60"
-                  placeholder="Elias Thorne"
+                  placeholder="Your name"
                   type="text"
                 />
               </div>
@@ -61,7 +61,7 @@ export default function Booking() {
                 <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Email Address</label>
                 <input
                   className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 transition-colors placeholder:text-outline-variant/60"
-                  placeholder="elias@archive.com"
+                  placeholder="your@email.com"
                   type="email"
                 />
               </div>
@@ -70,10 +70,13 @@ export default function Booking() {
               <div className="flex flex-col gap-2">
                 <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Event Type</label>
                 <select className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 appearance-none cursor-pointer">
-                  <option>Editorial Portrait</option>
-                  <option>Coastal Wedding</option>
-                  <option>Fine Art Architectural</option>
-                  <option>Product Narrative</option>
+                  <option>Wedding Photography</option>
+                  <option>Wedding Videography</option>
+                  <option>Photography + Film Package</option>
+                  <option>Engagement / Pre-Wedding Shoot</option>
+                  <option>Portrait Session</option>
+                  <option>Event Coverage</option>
+                  <option>Other</option>
                 </select>
               </div>
               <div className="flex flex-col gap-2">
@@ -85,20 +88,21 @@ export default function Booking() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Location (Halifax & Surroundings)</label>
+              <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Location</label>
               <select className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 appearance-none cursor-pointer">
-                <option>Downtown Halifax / Historic District</option>
-                <option>Peggy&apos;s Cove / Coastal Routes</option>
-                <option>Dartmouth / Lakefronts</option>
-                <option>Wolfville / Annapolis Valley</option>
-                <option>Other / Destination</option>
+                <option>Halifax / HRM</option>
+                <option>Peggy&apos;s Cove / South Shore</option>
+                <option>Annapolis Valley</option>
+                <option>Cape Breton</option>
+                <option>Out of Province / Destination</option>
+                <option>Not sure yet</option>
               </select>
             </div>
             <div className="flex flex-col gap-2">
               <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Tell us about your vision</label>
               <textarea
                 className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 resize-none transition-colors placeholder:text-outline-variant/60"
-                placeholder="Describe the mood, the light, and the legacy you wish to capture..."
+                placeholder="What matters most to you? What are you hoping we capture? Any specific moments, rituals, or traditions we should know about?"
                 rows={4}
               />
             </div>
@@ -115,15 +119,15 @@ export default function Booking() {
         {/* Process & Info Side */}
         <div className="space-y-16">
           <div>
-            <h2 className="text-3xl mb-8 font-serif">The Archival Process</h2>
+            <h2 className="text-3xl mb-8 font-serif">How It Works</h2>
             <p className="text-on-surface-variant leading-relaxed mb-12">
-              Creating lasting imagery requires a collaborative and intentional approach. We do not simply take photos; we curate memories into a tangible archive.
+              We keep it simple. No confusing packages, no hidden fees, no pressure. Just a conversation about what matters to you and how we can help.
             </p>
             <div className="space-y-12">
-              <ProcessStep number="01" title="The Conversation" description="We begin with a personal consultation to understand your aesthetic preferences, the significance of the event, and the desired emotional resonance of the final images." />
-              <ProcessStep number="02" title="The Curation" description="Location scouting and mood boarding. We select the perfect environment in the Halifax area that complements the light and the story we are telling." />
-              <ProcessStep number="03" title="The Capture" description="A seamless, non-intrusive session. We utilize both digital and film mediums to achieve the signature depth and grain of &apos;Akshay Kumar Studios.&apos;" />
-              <ProcessStep number="04" title="The Archive" description="Delivery of your bespoke gallery and hand-finished prints. A legacy preserved for generations to come." />
+              <ProcessStep number="01" title="Reach Out" description="Fill out the form, send us an email, or DM us on Instagram. Tell us your date, your venue (or idea of one), and what you're hoping for. We'll get back to you within 24 hours." />
+              <ProcessStep number="02" title="Let's Talk" description="We'll set up a call or meet for coffee — whatever feels right. This isn't a sales pitch. It's a conversation. We want to know your story, your family, what makes you laugh, and what moments matter most to you." />
+              <ProcessStep number="03" title="We Plan Together" description="Once we're both confident we're the right fit, we'll map out your day together. Timeline, key moments, family dynamics, cultural traditions — we learn it all so we don't miss a thing." />
+              <ProcessStep number="04" title="You Live It, We Capture It" description="On the day, you do you. Laugh loudly. Kiss slowly. Hug tightly. We blend in, stay out of the way, and capture everything — the big moments and the tiny ones you didn't even notice." />
             </div>
           </div>
           <div className="bg-surface-container-low p-8 border-l-2 border-secondary">
@@ -133,172 +137,23 @@ export default function Booking() {
         </div>
       </section>
 
-      {/* Pricing / Packages Section */}
-      <section className="px-8 max-w-7xl mx-auto py-32">
-        <div className="text-center mb-20">
-          <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">
-            Investment
-          </p>
-          <h2 className="text-4xl md:text-6xl serif leading-tight">
-            Packages & <span className="italic text-secondary">Pricing</span>
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Package 1 */}
-          <div className="border border-outline-variant/30 p-10 flex flex-col">
-            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-              Premium
-            </p>
-            <h3 className="text-2xl serif mb-2">My Big Fat Wedding</h3>
-            <p className="text-3xl serif mb-6">
-              From <span className="text-primary">$6,000</span>
-            </p>
-            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-              Everything you may want for your Wedding & Reception.
-            </p>
-            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                2 Lead Photographers
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Concept Engagement Shoot
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Film Photos
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Drone Photography
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                24 × 36 Wall Art
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Luxury 12×12 Album
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Next Day Edit of Sneak Peeks
-              </li>
-            </ul>
-            <Link
-              href="#inquiry-form"
-              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-            >
-              Inquire Now
-            </Link>
+      {/* Calendly Booking Section */}
+      <section className="px-8 max-w-5xl mx-auto py-32">
+        <AnimatedSection>
+          <div className="text-center mb-16">
+            <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">Book a Session</p>
+            <h2 className="text-4xl md:text-5xl serif leading-tight">Pick a time that works for <span className="italic">you</span></h2>
+            <p className="text-on-surface-variant font-light mt-4 max-w-md mx-auto">Choose the type of session you're interested in and book a free consultation call. No pressure, just a conversation.</p>
           </div>
-
-          {/* Package 2 — Featured */}
-          <div className="border-2 border-primary p-10 flex flex-col relative">
-            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] uppercase tracking-widest px-4 py-1">
-              Most Popular
-            </span>
-            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-              Essential
-            </p>
-            <h3 className="text-2xl serif mb-2">Shudh Desi Wedding</h3>
-            <p className="text-3xl serif mb-6">
-              From <span className="text-primary">$4,800</span>
-            </p>
-            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-              All the essentials and a bit more.
-            </p>
-            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                1 Lead + 1 Associate Photographer
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Engagement Shoot
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                24 × 36 Wall Art
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                8×8 Album
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Much More Options
-              </li>
-            </ul>
-            <Link
-              href="#inquiry-form"
-              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-            >
-              Inquire Now
-            </Link>
-          </div>
-
-          {/* Package 3 */}
-          <div className="border border-outline-variant/30 p-10 flex flex-col">
-            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-              Intimate
-            </p>
-            <h3 className="text-2xl serif mb-2">Band Bajaa Budget</h3>
-            <p className="text-3xl serif mb-6">
-              From <span className="text-primary">$4,000</span>
-            </p>
-            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-              For the elopers and the intimate celebrations.
-            </p>
-            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                1 Lead + 1 Associate Photographer
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                Complimentary Engagement Shoot
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-0.5">✦</span>
-                All Edited Images on Gallery
-              </li>
-            </ul>
-            <Link
-              href="#inquiry-form"
-              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-            >
-              Inquire Now
-            </Link>
-          </div>
-        </div>
-
-        {/* A La Carte */}
-        <div className="mt-20 max-w-2xl mx-auto text-center">
-          <h3 className="text-2xl serif mb-8">À La Carte Options</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
-            {[
-              "Engagement Shoot (2–3 hrs)",
-              "Concept Engagement Shoot (4+ hrs)",
-              "Additional Photographer",
-              "24 × 36 Premium Wall Art",
-              "Drone Photography",
-              "Same Day Slideshow",
-              "Sneak Peek in 2 Weeks",
-              "Film Camera Prints",
-              "Wedding Albums — from $600",
-            ].map((item) => (
-              <div
-                key={item}
-                className="flex items-center gap-3 py-3 border-b border-outline-variant/20"
-              >
-                <span className="text-secondary text-xs">✦</span>
-                <span className="text-sm text-on-surface-variant">{item}</span>
-              </div>
-            ))}
-          </div>
+        </AnimatedSection>
+        <div className="min-h-[700px]">
+          <iframe
+            src="https://calendly.com/a-kumar-uwo/new-meeting"
+            width="100%"
+            height="700"
+            frameBorder="0"
+            title="Book a session"
+          />
         </div>
       </section>
 
@@ -309,7 +164,7 @@ export default function Booking() {
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
                 src="/photos/nature/DSC01549.JPG"
-                alt="Vintage camera"
+                alt="Landscape"
                 fill
                 className="object-cover"
                 sizes="33vw"
@@ -319,7 +174,7 @@ export default function Booking() {
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
                 src="/photos/nature/DSC01697.JPG"
-                alt="Architecture"
+                alt="Landscape"
                 fill
                 className="object-cover"
                 sizes="33vw"
@@ -329,7 +184,7 @@ export default function Booking() {
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
                 src="/photos/nature/DSC01972.JPG"
-                alt="Forest landscape"
+                alt="Landscape"
                 fill
                 className="object-cover"
                 sizes="33vw"

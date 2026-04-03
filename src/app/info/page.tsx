@@ -20,28 +20,28 @@ const services = [
   {
     title: "Weddings",
     subtitle: "Coastal & Destination",
-    description: "Every love story deserves to be told with authenticity and grace. We document your day as it unfolds — unposed, raw, and deeply romantic — against the backdrop of Nova Scotia's wild landscapes or wherever your story takes us.",
+    description: "Your wedding is about you, your family, and the people who matter most. We blend into your celebration like family — no awkward direction, no stiff poses. Just the real, unfiltered magic of your day, from the stolen glances to the aunties dancing like nobody's watching.",
     image: "/photos/wedding-1/DSC05582.jpg",
     features: ["Full day coverage (8-12 hours)", "Second photographer included", "Online gallery with 500+ images", "Fine art prints available", "Engagement session included"],
   },
   {
     title: "Portraits",
     subtitle: "Editorial & Fine Art",
-    description: "Portraits that capture who you are — not just how you look. Whether it's a personal branding session, family documentation, or an editorial commission, we create images that feel like memories before they're even taken.",
+    description: "Not the LinkedIn version — the real you. The one your friends know, the one your partner fell for. Whether it's personal branding, family documentation, or editorial work, we create images that feel like memories before they're even taken.",
     image: "/photos/nature/DSC03402.jpg",
     features: ["60-90 minute session", "Location scouting included", "30-50 edited images", "Online gallery", "Print release included"],
   },
   {
     title: "Commercial",
     subtitle: "Brand & Product",
-    description: "Visual storytelling for brands that value substance over trend. From product photography to brand narratives, we create imagery that resonates with your audience and elevates your identity.",
+    description: "Visual storytelling for brands that value substance over trend. From product photography to brand narratives, we create imagery that resonates with your audience and elevates your identity — without the corporate stiffness.",
     image: "/photos/city/DSC02205.jpg",
     features: ["Creative direction", "Product & lifestyle photography", "Social media content packages", "Brand narrative development", "Commercial licensing"],
   },
   {
     title: "Events",
     subtitle: "Corporate & Private",
-    description: "From gallery openings to corporate gatherings, we capture the energy and atmosphere of your event with a documentary approach that prioritizes authentic moments over staged formality.",
+    description: "From gallery openings to corporate gatherings to your cousin's sangeet — we capture the energy, the chaos, and the moments in between. Documentary approach, no staged formality, just the real atmosphere of your event.",
     image: "/photos/events/DSC02885.JPG",
     features: ["Flexible coverage hours", "Same-day preview images", "Online gallery", "High-resolution delivery", "Rush editing available"],
   },
@@ -178,6 +178,185 @@ export default function Info() {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* Pricing / Packages Section */}
+      <section className="px-8 max-w-7xl mx-auto py-32">
+        <AnimatedSection>
+          <div className="text-center mb-20">
+            <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">
+              Investment
+            </p>
+            <h2 className="text-4xl md:text-6xl serif leading-tight">
+              Packages & <span className="italic text-secondary">Pricing</span>
+            </h2>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Package 1 */}
+          <AnimatedSection>
+            <div className="border border-outline-variant/30 p-10 flex flex-col">
+              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+                Premium
+              </p>
+              <h3 className="text-2xl serif mb-2">My Big Fat Wedding</h3>
+              <p className="text-3xl serif mb-6">
+                From <span className="text-primary">$6,000</span>
+              </p>
+              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+                Everything you could want for your wedding & reception — and then some.
+              </p>
+              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  2 Lead Photographers
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Concept Engagement Shoot
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Film Photography
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Drone Photography
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  24 × 36 Wall Art
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Luxury 12×12 Album
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Next Day Edit of Sneak Peeks
+                </li>
+              </ul>
+              <Link
+                href="/booking"
+                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+              >
+                Book Now
+              </Link>
+            </div>
+          </AnimatedSection>
+
+          {/* Package 2 — Featured */}
+          <AnimatedSection delay="stagger-1">
+            <div className="border-2 border-primary p-10 flex flex-col relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] uppercase tracking-widest px-4 py-1">
+                Most Popular
+              </span>
+              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+                Essential
+              </p>
+              <h3 className="text-2xl serif mb-2">Shudh Desi Wedding</h3>
+              <p className="text-3xl serif mb-6">
+                From <span className="text-primary">$4,800</span>
+              </p>
+              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+                All the essentials and a bit more.
+              </p>
+              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  1 Lead + 1 Associate Photographer
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Engagement Shoot
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  24 × 36 Wall Art
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  8×8 Album
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Much More Options
+                </li>
+              </ul>
+              <Link
+                href="/booking"
+                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+              >
+                Book Now
+              </Link>
+            </div>
+          </AnimatedSection>
+
+          {/* Package 3 */}
+          <AnimatedSection delay="stagger-2">
+            <div className="border border-outline-variant/30 p-10 flex flex-col">
+              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+                Intimate
+              </p>
+              <h3 className="text-2xl serif mb-2">Band Bajaa Budget</h3>
+              <p className="text-3xl serif mb-6">
+                From <span className="text-primary">$4,000</span>
+              </p>
+              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+                For the elopers and the intimate celebrations.
+              </p>
+              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  1 Lead + 1 Associate Photographer
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  Complimentary Engagement Shoot
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">✦</span>
+                  All Edited Images on Gallery
+                </li>
+              </ul>
+              <Link
+                href="/booking"
+                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+              >
+                Book Now
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        {/* A La Carte */}
+        <AnimatedSection>
+          <div className="mt-20 max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl serif mb-8">À La Carte Options</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
+              {[
+                "Engagement Shoot (2–3 hrs)",
+                "Concept Engagement Shoot (4+ hrs)",
+                "Additional Photographer",
+                "24 × 36 Premium Wall Art",
+                "Drone Photography",
+                "Same Day Slideshow",
+                "Sneak Peek in 2 Weeks",
+                "Film Camera Prints",
+                "Wedding Albums — from $600",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 py-3 border-b border-outline-variant/20"
+                >
+                  <span className="text-secondary text-xs">✦</span>
+                  <span className="text-sm text-on-surface-variant">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
       </section>
 
       {/* FAQ */}

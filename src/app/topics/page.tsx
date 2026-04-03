@@ -127,7 +127,7 @@ export default function Topics() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-8">
             <span className="tracking-widest uppercase text-[11px] font-semibold text-secondary mb-4 block">Education & Insights</span>
-            <h1 className="text-5xl md:text-7xl leading-tight mb-8">The Archive <br /> <span className="italic font-normal">of Knowledge</span></h1>
+            <h1 className="text-5xl md:text-7xl leading-tight mb-8">The stuff we <br /> <span className="italic font-normal">think about</span></h1>
             <p className="text-on-surface-variant max-w-md leading-relaxed text-lg">
               A curated space dedicated to the craft of film photography, the science of light, and the quiet beauty of the Atlantic coast.
             </p>

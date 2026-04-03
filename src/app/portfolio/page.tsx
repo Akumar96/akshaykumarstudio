@@ -44,11 +44,11 @@ export default function Portfolio() {
       <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 px-8 max-w-[1440px] mx-auto pt-4">
         <div className="lg:col-span-7">
           <span className="tracking-widest uppercase text-[11px] text-secondary mb-6 block">Halifax Photography Portfolio</span>
-          <h1 className="text-5xl md:text-7xl lg:text-display-1 leading-tight mb-8">Capturing the quiet <span className="italic">permanence</span> of light.</h1>
+          <h1 className="text-5xl md:text-7xl lg:text-display-1 leading-tight mb-8">See what real <span className="italic">moments</span> look like.</h1>
         </div>
         <div className="lg:col-span-4 lg:col-start-9 self-end">
           <p className="text-on-surface-variant leading-relaxed text-lg font-light italic border-l border-outline-variant/30 pl-8">
-            Every frame treated as a physical artifact. Inspired by the misty Atlantic coastline.
+            No staging. No fake smiles. Just people being people — the way they actually are.
           </p>
         </div>
       </header>
