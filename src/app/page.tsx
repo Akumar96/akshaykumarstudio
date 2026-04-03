@@ -126,80 +126,76 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* Our Services — Alternating Sections */}
+      {/* Our Services — 3 Column Cards */}
       <section className="bg-surface">
         <div className="container mx-auto px-8 py-40">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl mb-6">What We <span className="italic text-secondary">Do</span></h2>
             <p className="text-on-surface-variant font-light max-w-xl">Real people. Real moments. No posing, no awkwardness — just you, being you.</p>
           </AnimatedSection>
-        </div>
 
-        {/* Service 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <AnimatedSection>
-            <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
-              <Image
-                src="/photos/wedding-1/DSC05542.jpg"
-                alt="Wedding photography"
-                fill
-                className="object-cover"
-                sizes="50vw"
-                quality={95}
-              />
-            </div>
-          </AnimatedSection>
-          <div className="bg-surface-container-low flex items-center p-12 md:p-20">
-            <AnimatedSection delay="stagger-1">
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Weddings & Events</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Your Day, Your Way</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">We blend into your celebration like family. No awkward direction, no stiff poses — just the real, unfiltered magic of your day. The stolen glances, the heartfelt embraces, the aunties dancing like nobody's watching (we're watching, and it's beautiful).</p>
-            </AnimatedSection>
-          </div>
-        </div>
-
-        {/* Service 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="bg-surface-container-low flex items-center p-12 md:p-20 order-2 md:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            {/* Service 1 */}
             <AnimatedSection>
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Portraits & Brands</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Who You Actually Are</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Not the LinkedIn version. The real you — the one your friends know, the one your partner fell for. Whether it's personal branding, family portraits, or editorial work, we create images that feel like memories before they're even taken.</p>
+              <div className="bg-surface-container-low overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src="/photos/wedding-1/DSC05542.jpg"
+                    alt="Wedding photography"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="33vw"
+                    quality={95}
+                  />
+                </div>
+                <div className="p-8">
+                  <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3 block">Weddings & Events</span>
+                  <h3 className="text-2xl serif mb-4">Your Day, Your Way</h3>
+                  <p className="text-on-surface-variant font-light leading-relaxed text-sm">We blend into your celebration like family. No awkward direction, no stiff poses — just the real, unfiltered magic of your day. The stolen glances, the heartfelt embraces, the aunties dancing like nobody's watching.</p>
+                </div>
+              </div>
             </AnimatedSection>
-          </div>
-          <AnimatedSection delay="stagger-1">
-            <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden order-1 md:order-2">
-              <Image
-                src="/photos/wedding-2/DSC02061.jpg"
-                alt="Portrait work"
-                fill
-                className="object-cover"
-                sizes="50vw"
-                quality={95}
-              />
-            </div>
-          </AnimatedSection>
-        </div>
 
-        {/* Service 3 */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <AnimatedSection>
-            <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
-              <Image
-                src="/photos/city/DSC01984.JPG"
-                alt="Film and video"
-                fill
-                className="object-cover"
-                sizes="50vw"
-                quality={95}
-              />
-            </div>
-          </AnimatedSection>
-          <div className="bg-surface-container-low flex items-center p-12 md:p-20">
+            {/* Service 2 */}
             <AnimatedSection delay="stagger-1">
-              <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-4 block">Film & Video</span>
-              <h3 className="text-3xl md:text-display-3 serif mb-6">Moving Pictures That Move You</h3>
-              <p className="text-on-surface-variant font-light leading-relaxed max-w-md">Photographs are one thing — but hearing your vows again, seeing your mom's reaction in motion, reliving the chaos and joy of your sangeet? That hits different. We shoot cinematic films that make you feel it all over again.</p>
+              <div className="bg-surface-container-low overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src="/photos/portraits/DSC06687.jpg"
+                    alt="Portrait work"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="33vw"
+                    quality={95}
+                  />
+                </div>
+                <div className="p-8">
+                  <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3 block">Portraits & Brands</span>
+                  <h3 className="text-2xl serif mb-4">Who You Actually Are</h3>
+                  <p className="text-on-surface-variant font-light leading-relaxed text-sm">Not the LinkedIn version. The real you — the one your friends know, the one your partner fell for. Personal branding, family portraits, editorial work — images that feel like memories before they're even taken.</p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Service 3 */}
+            <AnimatedSection delay="stagger-2">
+              <div className="bg-surface-container-low overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src="/photos/events/DSC02885.JPG"
+                    alt="Film and video"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="33vw"
+                    quality={95}
+                  />
+                </div>
+                <div className="p-8">
+                  <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3 block">Film & Video</span>
+                  <h3 className="text-2xl serif mb-4">Moving Pictures That Move You</h3>
+                  <p className="text-on-surface-variant font-light leading-relaxed text-sm">Hearing your vows again, seeing your mom's reaction in motion, reliving the chaos and joy of your sangeet — that hits different. We shoot cinematic films that make you feel it all over again.</p>
+                </div>
+              </div>
             </AnimatedSection>
           </div>
         </div>

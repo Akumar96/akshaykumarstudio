@@ -13,7 +13,7 @@ export const photoSets: PhotoSet[] = [
     title: "Nature & Landscape",
     description: "The quiet permanence of Atlantic light.",
     category: "Nature",
-    coverPhoto: "/photos/nature/DSC01069.jpg",
+    coverPhoto: "/photos/nature/DSC01206.JPG",
     photos: [
       "/photos/nature/DSC01069.jpg",
       "/photos/nature/DSC01165-2.jpg",
@@ -29,7 +29,6 @@ export const photoSets: PhotoSet[] = [
       "/photos/nature/DSC02053.JPG",
       "/photos/nature/DSC02137-3.jpg",
       "/photos/nature/DSC03402.jpg",
-      "/photos/nature/DSC03629-2.jpg",
       "/photos/nature/DSC03629.jpg",
       "/photos/nature/DSC03932.JPG",
       "/photos/nature/DSC04271.JPG",
@@ -53,7 +52,7 @@ export const photoSets: PhotoSet[] = [
     title: "City",
     description: "Urban geometry and atmosphere.",
     category: "City",
-    coverPhoto: "/photos/city/DSC01984.JPG",
+    coverPhoto: "/photos/city/DSC03293.JPG",
     photos: [
       "/photos/city/DSC01984.JPG",
       "/photos/city/DSC01989.JPG",
@@ -86,8 +85,6 @@ export const photoSets: PhotoSet[] = [
     coverPhoto: "/photos/wedding-2/DSC02059.jpg",
     photos: [
       "/photos/wedding-2/DSC02051.JPG",
-      "/photos/wedding-2/DSC02059.jpg",
-      "/photos/wedding-2/DSC02061.jpg",
       "/photos/wedding-2/DSC02070.JPG",
     ],
   },
