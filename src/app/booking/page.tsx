@@ -36,6 +36,7 @@ export default function Booking() {
               fill
               className="object-cover"
               sizes="40vw"
+              quality={95}
             />
           </div>
         </div>
@@ -312,6 +313,7 @@ export default function Booking() {
                 fill
                 className="object-cover"
                 sizes="33vw"
+                quality={95}
               />
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
@@ -321,6 +323,7 @@ export default function Booking() {
                 fill
                 className="object-cover"
                 sizes="33vw"
+                quality={95}
               />
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
@@ -330,6 +333,7 @@ export default function Booking() {
                 fill
                 className="object-cover"
                 sizes="33vw"
+                quality={95}
               />
             </div>
           </div>

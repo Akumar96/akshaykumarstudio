@@ -30,6 +30,7 @@ export default function About() {
               className="object-cover brightness-90 transition-transform duration-1000 hover:scale-105"
               sizes="66vw"
               priority
+              quality={95}
             />
           </div>
           <div className="md:col-span-4 bg-surface-container-lowest p-12 md:-ml-24 relative z-10">
@@ -73,6 +74,7 @@ export default function About() {
                   fill
                   className="object-cover"
                   sizes="40vw"
+                  quality={95}
                 />
               </div>
               <div className="absolute -bottom-10 -left-10 bg-primary-container text-surface p-8 max-w-xs">
@@ -106,6 +108,7 @@ export default function About() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="50vw"
                   priority
+                  quality={95}
                 />
               </div>
               <h3 className="font-headline text-2xl mb-1">Akshay Kumar</h3>

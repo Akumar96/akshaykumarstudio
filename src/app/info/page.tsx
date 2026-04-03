@@ -132,6 +132,7 @@ export default function Info() {
                 fill
                 className="object-cover"
                 sizes="33vw"
+                quality={95}
               />
             </div>
           </div>
@@ -151,6 +152,7 @@ export default function Info() {
                     fill
                     className="object-cover"
                     sizes="50vw"
+                    quality={95}
                   />
                 </div>
               </AnimatedSection>

@@ -31,6 +31,7 @@ function ArticleCard({ article, index }: { article: TopicArticle; index: number 
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes={isLarge ? "66vw" : "33vw"}
+              quality={95}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent opacity-60"></div>
           </div>
@@ -63,6 +64,7 @@ function SideArticle({ article }: { article: TopicArticle }) {
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="50vw"
+              quality={95}
             />
           </div>
           <span className="tracking-widest uppercase text-[10px] font-medium text-secondary mb-3 block">{article.category}</span>
@@ -88,6 +90,7 @@ function SpreadArticle({ article, reverse = false }: { article: TopicArticle; re
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 sizes="60vw"
+                quality={95}
               />
             </div>
           </Link>

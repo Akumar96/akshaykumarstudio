@@ -29,6 +29,7 @@ export default function Home() {
             className="object-cover"
             priority
             sizes="100vw"
+            quality={95}
           />
           <div className="absolute inset-0 bg-surface/60" />
         </div>
@@ -62,6 +63,7 @@ export default function Home() {
               fill
               className="object-cover"
               sizes="100vw"
+              quality={95}
             />
           </div>
         </AnimatedSection>
@@ -91,6 +93,7 @@ export default function Home() {
               fill
               className="object-cover"
               sizes="100vw"
+              quality={95}
             />
           </div>
         </AnimatedSection>
@@ -106,6 +109,7 @@ export default function Home() {
               fill
               className="object-cover"
               sizes="100vw"
+              quality={95}
             />
           </div>
         </AnimatedSection>
@@ -141,6 +145,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes="50vw"
+                quality={95}
               />
             </div>
           </AnimatedSection>
@@ -170,6 +175,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes="50vw"
+                quality={95}
               />
             </div>
           </AnimatedSection>
@@ -185,6 +191,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes="50vw"
+                quality={95}
               />
             </div>
           </AnimatedSection>
@@ -222,6 +229,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    quality={95}
                   />
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-500 flex items-end">
                     <div className="p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -266,6 +274,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     sizes="40vw"
+                    quality={95}
                   />
                 </div>
               </AnimatedSection>

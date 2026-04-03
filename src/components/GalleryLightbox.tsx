@@ -76,7 +76,8 @@ export default function GalleryLightbox({
             alt={`${title} photo ${currentIndex + 1}`}
             fill
             className="object-contain"
-            sizes="80vw"
+            sizes="90vw"
+            quality={100}
             priority
           />
         </div>
@@ -128,6 +129,7 @@ export default function GalleryLightbox({
                 fill
                 className="object-cover"
                 sizes="64px"
+                quality={95}
               />
             </button>
           ))}

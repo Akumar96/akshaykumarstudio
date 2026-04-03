@@ -118,6 +118,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
           className="object-cover brightness-75"
           sizes="100vw"
           priority
+          quality={95}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 px-8 pb-16 max-w-4xl mx-auto">
@@ -160,6 +161,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="33vw"
+                    quality={95}
                   />
                 </div>
                 <span className="text-[10px] uppercase tracking-widest text-secondary font-bold">{related.category}</span>

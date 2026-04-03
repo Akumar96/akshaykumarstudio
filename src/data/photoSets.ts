@@ -65,7 +65,7 @@ export const photoSets: PhotoSet[] = [
   },
   {
     id: "wedding-1",
-    title: "Wedding — Coastal",
+    title: "Wedding — Desi",
     description: "Love against the wild coastline.",
     category: "Weddings",
     coverPhoto: "/photos/wedding-1/DSC05542.jpg",
@@ -80,7 +80,7 @@ export const photoSets: PhotoSet[] = [
   },
   {
     id: "wedding-2",
-    title: "Wedding — Garden",
+    title: "Wedding — Coastal",
     description: "Golden hour and quiet vows.",
     category: "Weddings",
     coverPhoto: "/photos/wedding-2/DSC02059.jpg",
@@ -93,7 +93,7 @@ export const photoSets: PhotoSet[] = [
   },
   {
     id: "wedding-3",
-    title: "Wedding — Cinema",
+    title: "Wedding — Bedford",
     description: "Film stills from the day.",
     category: "Weddings",
     coverPhoto: "/photos/wedding-3/DSC03342.jpg",

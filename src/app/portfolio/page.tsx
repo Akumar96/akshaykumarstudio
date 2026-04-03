@@ -77,12 +77,13 @@ export default function Portfolio() {
             className="group cursor-pointer relative overflow-hidden"
           >
             <div className="w-full aspect-[4/5] bg-surface-variant overflow-hidden relative">
-              <Image
+                <Image
                 src={set.coverPhoto}
                 alt={set.title}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
+                quality={90}
               />
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-500 flex items-end">
