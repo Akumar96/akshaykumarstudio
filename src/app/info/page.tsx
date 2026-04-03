@@ -21,28 +21,28 @@ const services = [
     title: "Weddings",
     subtitle: "Coastal & Destination",
     description: "Every love story deserves to be told with authenticity and grace. We document your day as it unfolds — unposed, raw, and deeply romantic — against the backdrop of Nova Scotia's wild landscapes or wherever your story takes us.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80",
+    image: "/photos/wedding-1/DSC05582.jpg",
     features: ["Full day coverage (8-12 hours)", "Second photographer included", "Online gallery with 500+ images", "Fine art prints available", "Engagement session included"],
   },
   {
     title: "Portraits",
     subtitle: "Editorial & Fine Art",
     description: "Portraits that capture who you are — not just how you look. Whether it's a personal branding session, family documentation, or an editorial commission, we create images that feel like memories before they're even taken.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80",
+    image: "/photos/nature/DSC03402.jpg",
     features: ["60-90 minute session", "Location scouting included", "30-50 edited images", "Online gallery", "Print release included"],
   },
   {
     title: "Commercial",
     subtitle: "Brand & Product",
     description: "Visual storytelling for brands that value substance over trend. From product photography to brand narratives, we create imagery that resonates with your audience and elevates your identity.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    image: "/photos/city/DSC02205.jpg",
     features: ["Creative direction", "Product & lifestyle photography", "Social media content packages", "Brand narrative development", "Commercial licensing"],
   },
   {
     title: "Events",
     subtitle: "Corporate & Private",
     description: "From gallery openings to corporate gatherings, we capture the energy and atmosphere of your event with a documentary approach that prioritizes authentic moments over staged formality.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
+    image: "/photos/events/DSC02885.JPG",
     features: ["Flexible coverage hours", "Same-day preview images", "Online gallery", "High-resolution delivery", "Rush editing available"],
   },
 ];
@@ -52,37 +52,37 @@ const testimonials = [
     quote: "Akshay didn't just photograph our wedding — he told our story. Every image feels like a memory we're reliving. The way he captured the light on the coast, the quiet moments between us... it's beyond anything we imagined.",
     name: "Sarah & James Mitchell",
     role: "Coastal Wedding, Peggy's Cove",
-    image: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=200&q=80",
+    image: "/photos/wedding-1/DSC05542.jpg",
   },
   {
     quote: "Working with this studio transformed our brand entirely. The editorial approach to our product line gave us imagery that feels like art — our customers constantly comment on how beautiful our visuals are.",
     name: "Elena Vasquez",
     role: "Creative Director, Salt & Stone Co.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    image: "/photos/portraits/DSC06687.jpg",
   },
   {
     quote: "The family portraits exceeded every expectation. He made our kids feel completely at ease, and the resulting images are the most natural, beautiful photographs of our family we've ever had. They hang in our living room and we look at them every day.",
     name: "The MacLeod Family",
     role: "Family Portrait Session, Halifax",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    image: "/photos/family/DSC08614.jpg",
   },
   {
     quote: "I've worked with many photographers over the years, but the level of intentionality and craft here is unmatched. Every image is considered, every moment captured with purpose. This is photography as art, not just documentation.",
     name: "David Chen",
     role: "Gallery Owner, Art Gallery of Nova Scotia",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    image: "/photos/portraits/DSC06721.jpg",
   },
   {
     quote: "Our corporate event was captured with such elegance and attention to detail. The same-day preview images were a huge hit on our social media, and the final gallery was delivered faster than promised. Truly professional.",
     name: "Rachel Thornton",
     role: "Marketing Director, Halifax Convention Centre",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    image: "/photos/events/DSC02757.JPG",
   },
   {
     quote: "The engagement session was the most fun we've ever had in front of a camera. Akshay has this incredible ability to make you forget you're being photographed. The results are stunning — we've already booked him for our wedding.",
     name: "Alex & Priya Sharma",
     role: "Engagement Session, South End Halifax",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80",
+    image: "/photos/wedding-2/DSC02059.jpg",
   },
 ];
 
@@ -127,8 +127,8 @@ export default function Info() {
           <div className="md:col-span-4 hidden md:block">
             <div className="aspect-[4/5] overflow-hidden relative">
               <Image
-                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
-                alt="Photography equipment"
+                  src="/photos/nature/DSC03629-2.jpg"
+                  alt="Photography equipment"
                 fill
                 className="object-cover"
                 sizes="33vw"

@@ -23,7 +23,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center overflow-hidden -mt-24">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
+            src="/photos/nature/DSC01069.jpg"
             alt="Dramatic coastline landscape"
             fill
             className="object-cover"
@@ -57,7 +57,7 @@ export default function Home() {
         <AnimatedSection>
           <div className="relative w-full aspect-[21/9] overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600&q=80"
+              src="/photos/nature/DSC01165-2.jpg"
               alt="Editorial shoot"
               fill
               className="object-cover"
@@ -86,7 +86,7 @@ export default function Home() {
         <AnimatedSection>
           <div className="relative w-full aspect-[21/9] overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1600&q=80"
+              src="/photos/nature/DSC01520.jpg"
               alt="Film photography"
               fill
               className="object-cover"
@@ -101,7 +101,7 @@ export default function Home() {
         <AnimatedSection>
           <div className="relative w-full aspect-[21/9] overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80"
+              src="/photos/nature/DSC03629.jpg"
               alt="Halifax landscape"
               fill
               className="object-cover"
@@ -136,7 +136,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80"
+                src="/photos/wedding-1/DSC05542.jpg"
                 alt="Coastal weddings"
                 fill
                 className="object-cover"
@@ -165,7 +165,7 @@ export default function Home() {
           <AnimatedSection delay="stagger-1">
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden order-1 md:order-2">
               <Image
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+                src="/photos/wedding-2/DSC02061.jpg"
                 alt="Brand work"
                 fill
                 className="object-cover"
@@ -180,7 +180,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+                src="/photos/city/DSC01984.JPG"
                 alt="Artist archives"
                 fill
                 className="object-cover"
@@ -198,6 +198,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Portfolio Collections */}
+      <section className="bg-surface-container-low">
+        <div className="container mx-auto px-8 py-40">
+          <AnimatedSection>
+            <h2 className="text-4xl md:text-5xl mb-6">Portfolio <span className="italic text-secondary">Collections</span></h2>
+            <p className="text-on-surface-variant font-light max-w-xl">Click through curated sets from our archive.</p>
+          </AnimatedSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+            {[
+              { title: "Nature & Landscape", category: "Nature", cover: "/photos/nature/DSC01069.jpg" },
+              { title: "Family", category: "Family", cover: "/photos/family/DSC08614.jpg" },
+              { title: "City", category: "City", cover: "/photos/city/DSC01984.JPG" },
+              { title: "Weddings", category: "Weddings", cover: "/photos/wedding-1/DSC05542.jpg" },
+              { title: "Portraits", category: "Portraits", cover: "/photos/portraits/DSC06687.jpg" },
+              { title: "Events", category: "Events", cover: "/photos/events/DSC02757.JPG" },
+            ].map((set, i) => (
+              <Link key={i} href="/portfolio" className="group cursor-pointer relative block">
+                <div className="relative aspect-[4/5] overflow-hidden bg-surface-variant">
+                  <Image
+                    src={set.cover}
+                    alt={set.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-500 flex items-end">
+                    <div className="p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                      <span className="text-[10px] tracking-[0.2em] uppercase text-white/80">{set.category}</span>
+                      <h3 className="text-xl mt-1 text-white serif">{set.title}</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <span className="text-[10px] tracking-[0.2em] uppercase text-secondary">{set.category}</span>
+                  <h3 className="text-xl mt-1 serif">{set.title}</h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Teaser — Clean Section */}
       <section className="bg-surface-container">
         <div className="container mx-auto px-8 py-40">
@@ -207,7 +249,7 @@ export default function Home() {
                 <span className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-8 block">The Visionary</span>
                 <h2 className="text-4xl md:text-6xl mb-10 leading-tight">Authenticity is the <br /> <span className="italic">only medium</span> that matters.</h2>
                 <p className="text-on-surface-variant text-lg font-light leading-relaxed mb-10 max-w-xl">
-                  Founded by Elias Thorne, Akshay Kumar Studios is a studio dedicated to the preservation of atmosphere. We don&apos;t just take pictures; we capture the feeling of the Atlantic—the quiet before the storm, the warmth of a hearth, the salt on the skin.
+                  Founded by Akshay Kumar, Akshay Kumar Studios is a studio dedicated to the preservation of atmosphere. We don&apos;t just take pictures; we capture the feeling of the Atlantic—the quiet before the storm, the warmth of a hearth, the salt on the skin.
                 </p>
                 <Link href="/about" className="inline-flex items-center gap-4 group">
                   <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1">Our Philosophy</span>
@@ -219,8 +261,8 @@ export default function Home() {
               <AnimatedSection delay="stagger-2">
                 <div className="aspect-[3/4] overflow-hidden relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
-                    alt="Photographer portrait"
+                    src="/photos/me/Pinch_shoot_Headshot.jpeg"
+                    alt="Akshay Kumar"
                     fill
                     className="object-cover"
                     sizes="40vw"

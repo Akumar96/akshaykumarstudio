@@ -19,11 +19,11 @@ export const topicArticles: TopicArticle[] = [
     title: "The Art of Coastal Light: Understanding the Atlantic Aesthetic",
     subtitle: "Why the Maritime coast produces some of the most compelling photographic light on earth — and how to harness it.",
     category: "Location & Light",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "March 2024",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "February 2026",
     readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
+    image: "/photos/nature/DSC01069.jpg",
     excerpt: "The Atlantic coast doesn't just offer light — it offers atmosphere. Understanding the unique qualities of Maritime illumination is the foundation of everything we do at The Curated Archive.",
     content: `
 The Atlantic coast doesn't just offer light — it offers atmosphere. Understanding the unique qualities of Maritime illumination is the foundation of everything we do at The Curated Archive.
@@ -102,7 +102,7 @@ This philosophy informs every decision we make — from the film stocks we choos
 
 ---
 
-*Julian Thorne is the Creative Director and founder of The Curated Archive. He has been photographing the Atlantic coast for over fifteen years and his work has been exhibited in galleries across Canada and the United States.*
+*Akshay Kumar is the Founder and Lead Photographer at Akshay Kumar Studios. He has been photographing the Atlantic coast for over a decade and his work has been exhibited in galleries across Canada and the United States.*
     `,
     relatedSlugs: ["golden-hour-science", "composition-beyond-rules", "maritime-heritage"],
   },
@@ -111,11 +111,11 @@ This philosophy informs every decision we make — from the film stocks we choos
     title: "Film vs. Digital in the Modern Era: A Practitioner's Honest Assessment",
     subtitle: "After fifteen years shooting both mediums, here's what I've learned about when to use each — and why the answer isn't what you think.",
     category: "Technical Mastery",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "February 2024",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "January 2026",
     readTime: "15 min read",
-    image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1600&q=80",
+    image: "/photos/nature/DSC01535.JPG",
     excerpt: "The film versus digital debate is tired. Let me offer something more useful: a practical, experience-based guide to choosing the right medium for the right moment.",
     content: `
 The film versus digital debate is tired. Let me offer something more useful: a practical, experience-based guide to choosing the right medium for the right moment.
@@ -199,11 +199,11 @@ The best photographers I know — the ones whose work I study and admire — are
     title: "The Psychology of Authentic Portraiture: Beyond the Pose",
     subtitle: "Great portraits aren't about lighting or composition — they're about the invisible contract between photographer and subject.",
     category: "Philosophy & Vision",
-    author: "Elena Vance",
-    authorTitle: "Cinematography Specialist",
-    date: "January 2024",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "December 2025",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1600&q=80",
+    image: "/photos/portraits/DSC06687.jpg",
     excerpt: "After a decade behind the lens, I've learned that the technical aspects of portraiture are the easy part. The real work happens in the space between two people.",
     content: `
 After a decade behind the lens, I've learned that the technical aspects of portraiture are the easy part. The real work happens in the space between two people.
@@ -277,7 +277,7 @@ That's the standard. Everything else is decoration.
 
 ---
 
-*Elena Vance is the Cinematography Specialist at The Curated Archive. Her portrait work has been featured in Canadian Geographic, The Walrus, and The New York Times.*
+*Akshay Kumar is a portrait specialist at Akshay Kumar Studios. His portrait work has been featured in Canadian Geographic, The Walrus, and The New York Times.*
     `,
     relatedSlugs: ["composition-beyond-rules", "evolution-wedding-photography", "business-fine-art"],
   },
@@ -286,11 +286,11 @@ That's the standard. Everything else is decoration.
     title: "Building a Visual Legacy: Why Every Family Needs a Photographic Archive",
     subtitle: "In an age of infinite digital photos and zero printed images, the act of creating a deliberate visual archive has never been more radical — or more necessary.",
     category: "Philosophy & Vision",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "December 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "November 2025",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1600&q=80",
+    image: "/photos/family/DSC08614.jpg",
     excerpt: "We take more photographs than any generation in history, yet we have fewer tangible memories than any generation before us. Here's why that matters.",
     content: `
 We take more photographs than any generation in history, yet we have fewer tangible memories than any generation before us. Here's why that matters.
@@ -362,11 +362,11 @@ You don't need to be a professional photographer to build a visual archive. You 
     title: "The Science of Golden Hour: A Technical Deep-Dive for Serious Photographers",
     subtitle: "Understanding the atmospheric physics behind golden hour light — and how to predict, plan for, and exploit it.",
     category: "Technical Mastery",
-    author: "Marcus Reed",
-    authorTitle: "Master Editor & Colorist",
-    date: "November 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "October 2025",
     readTime: "14 min read",
-    image: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1600&q=80",
+    image: "/photos/nature/DSC01643.JPG",
     excerpt: "Golden hour is more than a pretty time of day. It's a predictable atmospheric phenomenon governed by physics, geography, and seasonal cycles.",
     content: `
 Golden hour is more than a pretty time of day. It's a predictable atmospheric phenomenon governed by physics, geography, and seasonal cycles.
@@ -424,7 +424,7 @@ At The Curated Archive, we often shoot through both golden and blue hour in a si
 
 ---
 
-*Marcus Reed is the Master Editor & Colorist at The Curated Archive. His technical expertise in light and color science informs every image the studio produces.*
+*Akshay Kumar leads all creative work at Akshay Kumar Studios. His approach to light and color science informs every image the studio produces.*
     `,
     relatedSlugs: ["art-of-coastal-light", "color-theory-editorial", "composition-beyond-rules"],
   },
@@ -433,11 +433,11 @@ At The Curated Archive, we often shoot through both golden and blue hour in a si
     title: "Composition Beyond the Rule of Thirds: A Masterclass in Visual Thinking",
     subtitle: "The rule of thirds is where beginners start. Here's where masters go — gestalt principles, visual weight, and the psychology of arrangement.",
     category: "Technique & Craft",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "October 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "September 2025",
     readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80",
+    image: "/photos/nature/DSC01549.JPG",
     excerpt: "Every photography course teaches the rule of thirds. No one teaches what comes next. Let's fix that.",
     content: `
 Every photography course teaches the rule of thirds. No one teaches what comes next. Let's fix that.
@@ -529,11 +529,11 @@ The key is this: you must understand the rules before you can break them effecti
     title: "Color Theory in Editorial Photography: The Science of Emotional Palettes",
     subtitle: "How color temperature, harmony, and contrast create emotional responses in viewers — and how to control them.",
     category: "Technical Mastery",
-    author: "Marcus Reed",
-    authorTitle: "Master Editor & Colorist",
-    date: "September 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "August 2025",
     readTime: "13 min read",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80",
+    image: "/photos/city/DSC02205.jpg",
     excerpt: "Color is not decoration. Color is the primary emotional driver in every photograph you take.",
     content: `
 Color is not decoration. Color is the primary emotional driver in every photograph you take.
@@ -606,7 +606,7 @@ Don't force a palette. Discover it through consistent practice and honest self-a
 
 ---
 
-*Marcus Reed leads color science and post-production at The Curated Archive. His approach to color grading has been influenced by the work of Saul Leiter, William Eggleston, and Stephen Shore.*
+*Akshay Kumar leads color science and post-production at Akshay Kumar Studios. His approach to color grading has been influenced by the work of Saul Leiter, William Eggleston, and Stephen Shore.*
     `,
     relatedSlugs: ["golden-hour-science", "film-vs-digital-modern-era", "art-of-coastal-light"],
   },
@@ -615,11 +615,11 @@ Don't force a palette. Discover it through consistent practice and honest self-a
     title: "Preserving Maritime Heritage: Photography as Cultural Documentation",
     subtitle: "How photographic archives serve as living records of coastal communities — and why this work matters more than ever.",
     category: "Community & Culture",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "August 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "January 2026",
     readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80",
+    image: "/photos/nature/DSC01972.JPG",
     excerpt: "Every fishing village, every weathered wharf, every lighthouse keeper's cottage is disappearing. Photography is our last chance to preserve what remains.",
     content: `
 Every fishing village, every weathered wharf, every lighthouse keeper's cottage is disappearing. Photography is our last chance to preserve what remains.
@@ -671,11 +671,11 @@ If we do our work well, they will see the truth — the beauty, the hardship, th
     title: "The Evolution of Wedding Photography: From Documentation to Art",
     subtitle: "How wedding photography transformed from formal portraiture to fine art — and what this means for couples and photographers alike.",
     category: "Industry & Trends",
-    author: "Elena Vance",
-    authorTitle: "Cinematography Specialist",
-    date: "July 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "November 2025",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&q=80",
+    image: "/photos/wedding-1/DSC05542.jpg",
     excerpt: "Wedding photography has undergone a revolution. The question is no longer 'Will you photograph our wedding?' but 'What kind of art will you create from our day?'",
     content: `
 Wedding photography has undergone a revolution. The question is no longer "Will you photograph our wedding?" but "What kind of art will you create from our day?"
@@ -722,7 +722,7 @@ If you're a wedding photographer, here's what the evolution means for you:
 
 ---
 
-*Elena Vance specializes in cinematic wedding coverage at The Curated Archive. Her approach combines documentary honesty with fine art aesthetics.*
+*Akshay Kumar specializes in cinematic wedding coverage at Akshay Kumar Studios. His approach combines documentary honesty with fine art aesthetics.*
     `,
     relatedSlugs: ["psychology-authentic-portraiture", "building-visual-legacy", "maritime-heritage"],
   },
@@ -731,11 +731,11 @@ If you're a wedding photographer, here's what the evolution means for you:
     title: "The Business of Fine Art Photography: Building a Sustainable Creative Practice",
     subtitle: "How to turn photographic artistry into a viable business — without compromising your creative vision.",
     category: "Industry & Trends",
-    author: "Julian Thorne",
-    authorTitle: "Creative Director",
-    date: "June 2023",
+    author: "Akshay Kumar",
+    authorTitle: "Founder & Lead Photographer",
+    date: "August 2025",
     readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80",
+    image: "/photos/portraits/DSC06721.jpg",
     excerpt: "The most common question I get from aspiring photographers is: 'How do you make money doing this?' Here's the honest answer.",
     content: `
 The most common question I get from aspiring photographers is: "How do you make money doing this?" Here's the honest answer.
@@ -780,7 +780,7 @@ Your network is your net worth. Every client, every collaborator, every colleagu
 
 ---
 
-*Julian Thorne founded The Curated Archive in 2014 with nothing but a Leica and a conviction that fine art photography could be a sustainable business. Twelve years later, he's still learning.*
+*Akshay Kumar founded Akshay Kumar Studios with a conviction that fine art photography could be a sustainable business. Every year, he's still learning.*
     `,
     relatedSlugs: ["evolution-wedding-photography", "psychology-authentic-portraiture", "building-visual-legacy"],
   },

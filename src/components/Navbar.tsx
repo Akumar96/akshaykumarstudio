@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#fcf9f5]/80 backdrop-blur-xl">
-      <div className="flex justify-between items-center w-full px-8 py-4 max-w-[1920px] mx-auto">
+      <div className="flex justify-between items-center w-full px-8 py-6 max-w-[1920px] mx-auto">
         <Link href="/" className="group flex items-center gap-3">
           {/* AK Monogram Logo */}
           <div className="relative w-10 h-10 border-2 border-[#191410] flex items-center justify-center group-hover:bg-[#191410] transition-colors duration-300">
@@ -28,6 +28,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           <NavLink href="/" label="Home" active={pathname === "/"} />
           <NavLink href="/portfolio" label="Portfolio" active={pathname === "/portfolio"} />
+          <NavLink href="/shop" label="Shop" active={pathname === "/shop"} />
           <NavLink href="/info" label="Info" active={pathname === "/info"} />
           <NavLink href="/booking" label="Booking" active={pathname === "/booking"} />
           <NavLink href="/about" label="About" active={pathname === "/about"} />
@@ -35,7 +36,7 @@ export default function Navbar() {
         </div>
         <Link
           href="/booking"
-          className="bg-primary text-on-primary px-6 py-2 tracking-widest uppercase text-[11px] font-medium hover:opacity-70 transition-opacity active:scale-[0.98]"
+          className="bg-primary text-on-primary px-8 py-2.5 tracking-widest uppercase text-[11px] font-medium hover:opacity-70 transition-opacity active:scale-[0.98]"
         >
           Inquire
         </Link>

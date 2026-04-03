@@ -31,7 +31,7 @@ export default function Booking() {
         <div className="md:col-span-5 hidden md:block">
           <div className="aspect-[4/5] overflow-hidden relative">
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+              src="/photos/nature/DSC01643.JPG"
               alt="Coastal cliff"
               fill
               className="object-cover"
@@ -132,13 +132,182 @@ export default function Booking() {
         </div>
       </section>
 
+      {/* Pricing / Packages Section */}
+      <section className="px-8 max-w-7xl mx-auto py-32">
+        <div className="text-center mb-20">
+          <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">
+            Investment
+          </p>
+          <h2 className="text-4xl md:text-6xl serif leading-tight">
+            Packages & <span className="italic text-secondary">Pricing</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Package 1 */}
+          <div className="border border-outline-variant/30 p-10 flex flex-col">
+            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+              Premium
+            </p>
+            <h3 className="text-2xl serif mb-2">My Big Fat Wedding</h3>
+            <p className="text-3xl serif mb-6">
+              From <span className="text-primary">$6,000</span>
+            </p>
+            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+              Everything you may want for your Wedding & Reception.
+            </p>
+            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                2 Lead Photographers
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Concept Engagement Shoot
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Film Photos
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Drone Photography
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                24 × 36 Wall Art
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Luxury 12×12 Album
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Next Day Edit of Sneak Peeks
+              </li>
+            </ul>
+            <Link
+              href="#inquiry-form"
+              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+            >
+              Inquire Now
+            </Link>
+          </div>
+
+          {/* Package 2 — Featured */}
+          <div className="border-2 border-primary p-10 flex flex-col relative">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] uppercase tracking-widest px-4 py-1">
+              Most Popular
+            </span>
+            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+              Essential
+            </p>
+            <h3 className="text-2xl serif mb-2">Shudh Desi Wedding</h3>
+            <p className="text-3xl serif mb-6">
+              From <span className="text-primary">$4,800</span>
+            </p>
+            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+              All the essentials and a bit more.
+            </p>
+            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                1 Lead + 1 Associate Photographer
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Engagement Shoot
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                24 × 36 Wall Art
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                8×8 Album
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Much More Options
+              </li>
+            </ul>
+            <Link
+              href="#inquiry-form"
+              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+            >
+              Inquire Now
+            </Link>
+          </div>
+
+          {/* Package 3 */}
+          <div className="border border-outline-variant/30 p-10 flex flex-col">
+            <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
+              Intimate
+            </p>
+            <h3 className="text-2xl serif mb-2">Band Bajaa Budget</h3>
+            <p className="text-3xl serif mb-6">
+              From <span className="text-primary">$4,000</span>
+            </p>
+            <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
+              For the elopers and the intimate celebrations.
+            </p>
+            <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                1 Lead + 1 Associate Photographer
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                Complimentary Engagement Shoot
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">✦</span>
+                All Edited Images on Gallery
+              </li>
+            </ul>
+            <Link
+              href="#inquiry-form"
+              className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+            >
+              Inquire Now
+            </Link>
+          </div>
+        </div>
+
+        {/* A La Carte */}
+        <div className="mt-20 max-w-2xl mx-auto text-center">
+          <h3 className="text-2xl serif mb-8">À La Carte Options</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
+            {[
+              "Engagement Shoot (2–3 hrs)",
+              "Concept Engagement Shoot (4+ hrs)",
+              "Additional Photographer",
+              "24 × 36 Premium Wall Art",
+              "Drone Photography",
+              "Same Day Slideshow",
+              "Sneak Peek in 2 Weeks",
+              "Film Camera Prints",
+              "Wedding Albums — from $600",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 py-3 border-b border-outline-variant/20"
+              >
+                <span className="text-secondary text-xs">✦</span>
+                <span className="text-sm text-on-surface-variant">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Visual Anchor Section — Full Color, Clean Grid */}
-      <section className="mt-32 px-8 max-w-[1920px] mx-auto">
+      <section className="mt-0 px-8 max-w-[1920px] mx-auto">
         <AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
+                src="/photos/nature/DSC01549.JPG"
                 alt="Vintage camera"
                 fill
                 className="object-cover"
@@ -147,7 +316,7 @@ export default function Booking() {
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+                src="/photos/nature/DSC01697.JPG"
                 alt="Architecture"
                 fill
                 className="object-cover"
@@ -156,7 +325,7 @@ export default function Booking() {
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+                src="/photos/nature/DSC01972.JPG"
                 alt="Forest landscape"
                 fill
                 className="object-cover"
