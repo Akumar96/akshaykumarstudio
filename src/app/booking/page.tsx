@@ -163,8 +163,8 @@ export default function Booking() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="/photos/nature/DSC01549.JPG"
-                alt="Landscape"
+                src="/photos/wedding-1/DSC05542.jpg"
+                alt="Wedding"
                 fill
                 className="object-cover"
                 sizes="33vw"
@@ -173,8 +173,8 @@ export default function Booking() {
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="/photos/nature/DSC01697.JPG"
-                alt="Landscape"
+                src="/photos/portraits/DSC06687.jpg"
+                alt="Portrait"
                 fill
                 className="object-cover"
                 sizes="33vw"
@@ -183,8 +183,8 @@ export default function Booking() {
             </div>
             <div className="aspect-[3/4] overflow-hidden relative">
               <Image
-                src="/photos/nature/DSC01972.JPG"
-                alt="Landscape"
+                src="/photos/wedding-3/DSC03342.jpg"
+                alt="Wedding"
                 fill
                 className="object-cover"
                 sizes="33vw"

@@ -119,6 +119,7 @@ export default function Home() {
       <section className="bg-primary-container py-40 px-8">
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center">
+            <span className="tracking-widest uppercase text-[11px] text-surface/60 mb-8 block">Capturing the Soul of the Maritimes</span>
             <h3 className="text-surface text-3xl md:text-5xl serif italic mb-8">&quot;Our goal is to capture beautiful in-between moments — the ones that make your story so special.&quot;</h3>
             <p className="text-secondary-fixed-dim font-light leading-relaxed mb-10 max-w-lg mx-auto">Be your true self. Show your fun, quirky personality. Laugh loudly. Kiss slowly. Hug tightly. We'll handle the rest.</p>
             <Link href="/portfolio" className="text-surface tracking-widest uppercase text-[11px] font-medium border-b border-surface/30 pb-2 hover:border-surface transition-all">See What We Mean</Link>
