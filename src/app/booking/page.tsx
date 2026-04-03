@@ -42,78 +42,23 @@ export default function Booking() {
         </div>
       </section>
 
-      {/* Booking and Inquiry Content */}
+      {/* Contact / Email Section */}
       <section className="px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
-        {/* Contact Form Side */}
+        {/* Email Side */}
         <div className="p-8 md:p-12">
-          <h2 className="text-3xl mb-12 font-serif italic border-b border-outline-variant/20 pb-6">Tell Us About Your Day</h2>
-          <form className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col gap-2">
-                <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Full Name</label>
-                <input
-                  className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 transition-colors placeholder:text-outline-variant/60"
-                  placeholder="Your name"
-                  type="text"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Email Address</label>
-                <input
-                  className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 transition-colors placeholder:text-outline-variant/60"
-                  placeholder="your@email.com"
-                  type="email"
-                />
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col gap-2">
-                <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Event Type</label>
-                <select className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 appearance-none cursor-pointer">
-                  <option>Wedding Photography</option>
-                  <option>Wedding Videography</option>
-                  <option>Photography + Film Package</option>
-                  <option>Engagement / Pre-Wedding Shoot</option>
-                  <option>Portrait Session</option>
-                  <option>Event Coverage</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Preferred Date</label>
-                <input
-                  className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 transition-colors"
-                  type="date"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Location</label>
-              <select className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 appearance-none cursor-pointer">
-                <option>Halifax / HRM</option>
-                <option>Peggy&apos;s Cove / South Shore</option>
-                <option>Annapolis Valley</option>
-                <option>Cape Breton</option>
-                <option>Out of Province / Destination</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
-            <div className="flex flex-col gap-2">
-              <label className="text-[10px] uppercase tracking-widest text-secondary font-semibold">Tell us about your vision</label>
-              <textarea
-                className="bg-transparent border-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary py-2 resize-none transition-colors placeholder:text-outline-variant/60"
-                placeholder="What matters most to you? What are you hoping we capture? Any specific moments, rituals, or traditions we should know about?"
-                rows={4}
-              />
-            </div>
-            <button
-              className="w-full bg-primary text-on-primary py-5 text-[11px] uppercase tracking-[0.3em] font-medium hover:bg-primary-container transition-all flex items-center justify-center gap-3 group rounded-full"
-              type="submit"
-            >
-              Send Inquiry
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 group-hover:translate-x-1 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-            </button>
-          </form>
+          <h2 className="text-3xl mb-12 font-serif italic border-b border-outline-variant/20 pb-6">Get in Touch</h2>
+          <p className="text-on-surface-variant leading-relaxed text-lg mb-8">
+            The best way to start is with an email. Tell us about your day, your vision, and what matters most to you. We'll get back to you within 24 hours.
+          </p>
+          <a
+            href="mailto:a.kumar.uwo@gmail.com"
+            className="inline-block text-xl serif text-primary hover:opacity-70 transition-opacity mb-4"
+          >
+            a.kumar.uwo@gmail.com
+          </a>
+          <p className="text-on-surface-variant text-sm font-light italic mt-6">
+            Or just book a free diagnostic call below — not a sales call, just a conversation about what you need.
+          </p>
         </div>
 
         {/* Process & Info Side */}
@@ -124,8 +69,8 @@ export default function Booking() {
               We keep it simple. No confusing packages, no hidden fees, no pressure. Just a conversation about what matters to you and how we can help.
             </p>
             <div className="space-y-12">
-              <ProcessStep number="01" title="Reach Out" description="Fill out the form, send us an email, or DM us on Instagram. Tell us your date, your venue (or idea of one), and what you're hoping for. We'll get back to you within 24 hours." />
-              <ProcessStep number="02" title="Let's Talk" description="We'll set up a call or meet for coffee — whatever feels right. This isn't a sales pitch. It's a conversation. We want to know your story, your family, what makes you laugh, and what moments matter most to you." />
+              <ProcessStep number="01" title="Reach Out" description="Send us an email or book a call below. Tell us your date, your venue (or idea of one), and what you're hoping for. We'll get back to you within 24 hours." />
+              <ProcessStep number="02" title="Let's Talk" description="We'll set up a call or meet for coffee — whatever feels right. This isn't a sales pitch. It's a diagnostic conversation. We want to know your story, your family, what makes you laugh, and what moments matter most to you." />
               <ProcessStep number="03" title="We Plan Together" description="Once we're both confident we're the right fit, we'll map out your day together. Timeline, key moments, family dynamics, cultural traditions — we learn it all so we don't miss a thing." />
               <ProcessStep number="04" title="You Live It, We Capture It" description="On the day, you do you. Laugh loudly. Kiss slowly. Hug tightly. We blend in, stay out of the way, and capture everything — the big moments and the tiny ones you didn't even notice." />
             </div>
@@ -142,8 +87,8 @@ export default function Booking() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">Book a Session</p>
-            <h2 className="text-4xl md:text-5xl serif leading-tight">Pick a time that works for <span className="italic">you</span></h2>
-            <p className="text-on-surface-variant font-light mt-4 max-w-md mx-auto">Choose the type of session you're interested in and book a free consultation call. No pressure, just a conversation.</p>
+            <h2 className="text-4xl md:text-5xl serif leading-tight">Book a free <span className="italic">diagnostic call</span></h2>
+            <p className="text-on-surface-variant font-light mt-4 max-w-md mx-auto">Not a sales call — just a conversation about what you need, what matters to you, and whether we're the right fit for each other.</p>
           </div>
         </AnimatedSection>
         <div className="min-h-[700px]">
