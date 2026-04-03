@@ -211,11 +211,10 @@ export default function Home() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
             {[
-              { title: "Nature & Landscape", category: "Nature", cover: "/photos/nature/DSC01069.jpg" },
+              { title: "Nature & Landscape", category: "Nature", cover: "/photos/nature/DSC01206.JPG" },
               { title: "Family", category: "Family", cover: "/photos/family/DSC08614.jpg" },
-              { title: "City", category: "City", cover: "/photos/city/DSC01984.JPG" },
+              { title: "City", category: "City", cover: "/photos/city/DSC03293.JPG" },
               { title: "Weddings", category: "Weddings", cover: "/photos/wedding-1/DSC05542.jpg" },
-              { title: "Portraits", category: "Portraits", cover: "/photos/portraits/DSC06687.jpg" },
               { title: "Events", category: "Events", cover: "/photos/events/DSC02757.JPG" },
             ].map((set, i) => (
               <Link key={i} href="/portfolio" className="group cursor-pointer relative block">
