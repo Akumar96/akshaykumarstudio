@@ -178,47 +178,6 @@ export default function Info() {
         ))}
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-surface-container py-40 mb-40">
-        <div className="container mx-auto px-8">
-          <AnimatedSection>
-            <div className="text-center mb-20">
-              <span className="tracking-widest uppercase text-[11px] text-secondary block mb-6">Client Stories</span>
-              <h2 className="text-4xl md:text-5xl serif mb-6">What Our Clients <span className="italic">Say</span></h2>
-              <p className="text-on-surface-variant max-w-lg mx-auto font-light text-lg">Every session is a collaboration. Here's what it feels like to work with us.</p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, i) => (
-              <AnimatedSection key={testimonial.name} delay={`stagger-${Math.min(i % 4 + 1, 4)}`}>
-                <div className="bg-surface-container-lowest p-8 h-full flex flex-col">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 text-secondary/20 mb-6">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                  </svg>
-                  <p className="text-on-surface-variant text-sm leading-relaxed flex-grow mb-6 italic">{testimonial.quote}</p>
-                  <div className="flex items-center gap-4 pt-6 border-t border-outline-variant/15">
-                    <div className="w-10 h-10 rounded-full overflow-hidden relative flex-shrink-0">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        fill
-                        className="object-cover"
-                        sizes="40px"
-                      />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold">{testimonial.name}</p>
-                      <p className="text-[11px] text-secondary">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="px-8 max-w-4xl mx-auto mb-40">
         <AnimatedSection>
