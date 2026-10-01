@@ -1,0 +1,7 @@
+{
+  "name": "akstudios-delivery",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "r2_buckets": [{ "binding": "DELIVERIES", "bucket_name": "akstudios-private-delivery" }],
+  "observability": { "enabled": false }
+}

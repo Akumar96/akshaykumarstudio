@@ -1,435 +1,178 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { useInView } from "@/hooks/useInView";
-
-function AnimatedSection({ children, className = "", delay = "" }: { children: React.ReactNode; className?: string; delay?: string }) {
-  const [ref, isInView] = useInView({ threshold: 0.1 });
-  return (
-    <div
-      ref={ref}
-      className={`fade-up ${isInView ? "animate-in" : ""} ${delay} ${className}`}
-    >
-      {children}
-    </div>
-  );
-}
-
+import Photo from "@/components/Photo";
+import Arrow from "@/components/Arrow";
+import ClientJourney from "@/components/ClientJourney";
+export const metadata: Metadata = {
+  title: "Commercial, real estate & hotel photography",
+  description:
+    "Photography and film for commercial interiors, real estate and hotels. Plan your project with Akshay Kumar Studios in Halifax.",
+};
 const services = [
   {
-    title: "Weddings",
-    subtitle: "Coastal & Destination",
-    description: "Your wedding is about you, your family, and the people who matter most. We blend into your celebration like family — no awkward direction, no stiff poses. Just the real, unfiltered magic of your day, from the stolen glances to the aunties dancing like nobody's watching.",
-    image: "/photos/wedding-1/DSC05582.jpg",
-    features: ["Full day coverage (8-12 hours)", "Second photographer included", "Online gallery with 500+ images", "Fine art prints available", "Engagement session included"],
+    id: "01",
+    name: "Commercial spaces",
+    description:
+      "For designers, businesses and the spaces they create. A clear view of the whole, with attention to the materials and details.",
+    items: [
+      "Offices, retail & workspaces",
+      "Interior design & architectural details",
+      "Images for websites, portfolios & campaigns",
+    ],
   },
   {
-    title: "Portraits",
-    subtitle: "Editorial & Fine Art",
-    description: "Not the LinkedIn version — the real you. The one your friends know, the one your partner fell for. Whether it's personal branding, family documentation, or editorial work, we create images that feel like memories before they're even taken.",
-    image: "/photos/nature/DSC03402.jpg",
-    features: ["60-90 minute session", "Location scouting included", "30-50 edited images", "Online gallery", "Print release included"],
+    id: "02",
+    name: "Real estate",
+    description:
+      "Help a prospective buyer understand the property: the layout, the natural light and how the rooms connect.",
+    items: [
+      "Residential & commercial properties",
+      "Interiors, exteriors & surrounding context",
+      "Listing photography & property films",
+    ],
   },
   {
-    title: "Commercial",
-    subtitle: "Brand & Product",
-    description: "Visual storytelling for brands that value substance over trend. From product photography to brand narratives, we create imagery that resonates with your audience and elevates your identity — without the corporate stiffness.",
-    image: "/photos/city/DSC02205.jpg",
-    features: ["Creative direction", "Product & lifestyle photography", "Social media content packages", "Brand narrative development", "Commercial licensing"],
-  },
-  {
-    title: "Events",
-    subtitle: "Corporate & Private",
-    description: "From gallery openings to corporate gatherings to your cousin's sangeet — we capture the energy, the chaos, and the moments in between. Documentary approach, no staged formality, just the real atmosphere of your event.",
-    image: "/photos/events/DSC02885.JPG",
-    features: ["Flexible coverage hours", "Same-day preview images", "Online gallery", "High-resolution delivery", "Rush editing available"],
+    id: "03",
+    name: "Hotels & stays",
+    description:
+      "Show what it feels like to arrive, settle in and spend time there. From the room itself to the spaces guests share.",
+    items: [
+      "Guest rooms, suites & common areas",
+      "Dining, amenities & design details",
+      "Photography & film for hospitality websites",
+    ],
   },
 ];
-
-const testimonials = [
-  {
-    quote: "Akshay didn't just photograph our wedding — he told our story. Every image feels like a memory we're reliving. The way he captured the light on the coast, the quiet moments between us... it's beyond anything we imagined.",
-    name: "Sarah & James Mitchell",
-    role: "Coastal Wedding, Peggy's Cove",
-    image: "/photos/wedding-1/DSC05542.jpg",
-  },
-  {
-    quote: "Working with this studio transformed our brand entirely. The editorial approach to our product line gave us imagery that feels like art — our customers constantly comment on how beautiful our visuals are.",
-    name: "Elena Vasquez",
-    role: "Creative Director, Salt & Stone Co.",
-    image: "/photos/portraits/DSC06687.jpg",
-  },
-  {
-    quote: "The family portraits exceeded every expectation. He made our kids feel completely at ease, and the resulting images are the most natural, beautiful photographs of our family we've ever had. They hang in our living room and we look at them every day.",
-    name: "The MacLeod Family",
-    role: "Family Portrait Session, Halifax",
-    image: "/photos/family/DSC08614.jpg",
-  },
-  {
-    quote: "I've worked with many photographers over the years, but the level of intentionality and craft here is unmatched. Every image is considered, every moment captured with purpose. This is photography as art, not just documentation.",
-    name: "David Chen",
-    role: "Gallery Owner, Art Gallery of Nova Scotia",
-    image: "/photos/portraits/DSC06721.jpg",
-  },
-  {
-    quote: "Our corporate event was captured with such elegance and attention to detail. The same-day preview images were a huge hit on our social media, and the final gallery was delivered faster than promised. Truly professional.",
-    name: "Rachel Thornton",
-    role: "Marketing Director, Halifax Convention Centre",
-    image: "/photos/events/DSC02757.JPG",
-  },
-  {
-    quote: "The engagement session was the most fun we've ever had in front of a camera. Akshay has this incredible ability to make you forget you're being photographed. The results are stunning — we've already booked him for our wedding.",
-    name: "Alex & Priya Sharma",
-    role: "Engagement Session, South End Halifax",
-    image: "/photos/wedding-2/DSC02059.jpg",
-  },
-];
-
 const faqs = [
-  {
-    question: "What is your booking process?",
-    answer: "After your initial inquiry, we'll schedule a complimentary consultation to discuss your vision, timeline, and any specific requirements. Once we're both confident we're the right fit, a 30% retainer secures your date.",
-  },
-  {
-    question: "How long until we receive our images?",
-    answer: "Wedding galleries are delivered within 6-8 weeks. Portrait sessions within 2-3 weeks. Commercial projects vary based on scope but typically 3-4 weeks. Rush editing is available for an additional fee.",
-  },
-  {
-    question: "Do you travel for shoots?",
-    answer: "Absolutely. While we're based in Halifax, we regularly travel across the Maritimes and beyond. Travel fees apply for destinations outside of the HRM area.",
-  },
-  {
-    question: "What style of photography do you specialize in?",
-    answer: "Fine art editorial with a documentary sensibility. We prioritize natural light, authentic moments, and cinematic composition. Our work is influenced by film photography and the unique quality of Atlantic coastal light.",
-  },
-  {
-    question: "Do you offer prints and albums?",
-    answer: "Yes. We offer museum-quality fine art prints on archival paper and handcrafted leather-bound albums. Print pricing is available upon request, and album packages can be added to any session.",
-  },
+  [
+    "What do you need for a quote?",
+    "The property location, approximate size or number of rooms, your preferred date and where the images will be used. A floor plan or a few reference photos are helpful if you have them.",
+  ],
+  [
+    "How should we prepare the space?",
+    "We’ll agree on a shot list beforehand. Plan to clean and stage the areas being photographed, remove temporary signs and clutter, and arrange access to each room. For hotels, we can discuss a schedule around guests and housekeeping.",
+  ],
+  [
+    "Can we combine photography and video?",
+    "Yes. Tell me which photographs and film formats you need. We’ll plan the coverage together, including any vertical or horizontal versions for different channels.",
+  ],
+  [
+    "What about delivery and usage?",
+    "Your quote will set out the number and format of deliverables, the delivery date and the agreed usage. Let me know about listing deadlines, launch dates, advertising or third-party use at the start.",
+  ],
+  [
+    "Do you work outside Halifax?",
+    "Yes, travel enquiries are welcome. Include the location and schedule so travel can be factored into the proposal.",
+  ],
 ];
-
 export default function Info() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="px-8 max-w-7xl mx-auto mb-32 pt-4">
-        <div className="grid md:grid-cols-12 gap-8 items-end">
-          <div className="md:col-span-8">
-            <span className="tracking-widest uppercase text-[11px] text-secondary block mb-6">Services & Experience</span>
-            <h1 className="text-5xl md:text-7xl leading-[1.1] mb-8">
-              Crafting <span className="italic">Timeless</span> <br />Visual Stories.
+    <>
+      <div className="shell">
+        <header className="page-intro">
+          <span className="eyebrow accent">Working together</span>
+          <div className="page-intro-row">
+            <h1>
+              Your space.
+              <br />
+              <i>Seen properly.</i>
             </h1>
-            <p className="text-on-surface-variant max-w-xl text-lg leading-relaxed">
-              Every commission is approached as a unique visual monograph — from the initial conversation to the final print.
+            <p>
+              Photography and film for commercial spaces, real estate and
+              hospitality. Planned around the property and what you need to
+              show.
             </p>
           </div>
-          <div className="md:col-span-4 hidden md:block">
-            <div className="aspect-[4/5] overflow-hidden relative">
-              <Image
-                  src="/photos/nature/DSC03629-2.jpg"
-                  alt="Photography equipment"
-                fill
-                className="object-cover"
-                sizes="33vw"
-                quality={95}
-              />
-            </div>
+        </header>
+        <section className="service-feature">
+          <Photo
+            src="/photos/nature/DSC03629.webp"
+            alt="Architecture and rooftops viewed through an arch"
+            sizes="(max-width: 760px) 94vw, 46vw"
+            preload
+            unoptimized
+          />
+          <div>
+            <span className="eyebrow accent">
+              A clear brief. A considered approach.
+            </span>
+            <h2>
+              Start with the space.
+              <br />
+              Then find its story.
+            </h2>
+            <p>
+              The best starting point is a conversation about the property, the
+              audience and where the images will appear. From there, we’ll agree
+              on the shot list, schedule and deliverables.
+            </p>
+            <Link className="text-link" href="/booking">
+              Discuss your project <Arrow diagonal />
+            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="mb-40">
-        {services.map((service, i) => (
-          <div key={service.title} className={i % 2 === 0 ? "" : ""}>
-            <div className={`grid grid-cols-1 md:grid-cols-2 ${i % 2 === 1 ? "" : ""}`}>
-              <AnimatedSection>
-                <div className={`relative aspect-[4/5] md:aspect-auto md:min-h-[500px] overflow-hidden ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                    sizes="50vw"
-                    quality={95}
-                  />
-                </div>
-              </AnimatedSection>
-              <div className="bg-surface-container-low flex items-center p-12 md:p-20">
-                <AnimatedSection delay="stagger-1">
-                  <span className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-2 block">{service.subtitle}</span>
-                  <h2 className="text-3xl md:text-4xl serif mb-6">{service.title}</h2>
-                  <p className="text-on-surface-variant font-light leading-relaxed max-w-md mb-8">{service.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-3 text-sm text-on-surface-variant">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-secondary flex-shrink-0"><path d="M20 6 9 17l-5-5" /></svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="/booking" className="inline-flex items-center gap-3 group">
-                    <span className="tracking-widest uppercase text-[11px] font-bold border-b border-primary pb-1 group-hover:opacity-60 transition-opacity">Book This Service</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 group-hover:translate-x-2 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                  </Link>
-                </AnimatedSection>
+        </section>
+        <section className="pricing">
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow accent">Areas of focus</span>
+              <h2>Three ways to work together.</h2>
+            </div>
+            <span className="eyebrow">Quoted to your brief</span>
+          </div>
+          {services.map((service) => (
+            <div
+              className="commercial-service"
+              id={service.id}
+              key={service.id}
+            >
+              <span className="eyebrow accent">{service.id}</span>
+              <div>
+                <h3>{service.name}</h3>
+                <p>{service.description}</p>
               </div>
+              <ul>
+                {service.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <Link
+                href="/booking"
+                aria-label={`Enquire about ${service.name}`}
+              >
+                <Arrow diagonal />
+              </Link>
             </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Pricing / Packages Section */}
-      <section className="px-8 max-w-7xl mx-auto py-32">
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <p className="tracking-widest uppercase text-[11px] font-bold text-secondary mb-6">
-              Investment
-            </p>
-            <h2 className="text-4xl md:text-6xl serif leading-tight">
-              Packages & <span className="italic text-secondary">Pricing</span>
+          ))}
+          <p className="contact-prompt">
+            Every property is different. Pricing follows the size of the space,
+            production needs, deliverables and usage.{" "}
+            <Link className="underline underline-offset-4" href="/booking">
+              Request a project quote.
+            </Link>
+          </p>
+        </section>
+        <ClientJourney />
+      </div>
+      <section className="faq-section">
+        <div className="shell faq-layout">
+          <div>
+            <span className="eyebrow accent">Before the shoot</span>
+            <h2>
+              A few practical
+              <br />
+              <i>questions.</i>
             </h2>
           </div>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Package 1 */}
-          <AnimatedSection>
-            <div className="border border-outline-variant/30 p-10 flex flex-col">
-              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-                Premium
-              </p>
-              <h3 className="text-2xl serif mb-2">My Big Fat Wedding</h3>
-              <p className="text-3xl serif mb-6">
-                From <span className="text-primary">$6,000</span>
-              </p>
-              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-                Everything you could want for your wedding & reception — and then some.
-              </p>
-              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  2 Lead Photographers
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Concept Engagement Shoot
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Film Photography
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Drone Photography
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  24 × 36 Wall Art
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Luxury 12×12 Album
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Next Day Edit of Sneak Peeks
-                </li>
-              </ul>
-              <Link
-                href="/booking"
-                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-              >
-                Book Now
-              </Link>
-            </div>
-          </AnimatedSection>
-
-          {/* Package 2 — Featured */}
-          <AnimatedSection delay="stagger-1">
-            <div className="border-2 border-primary p-10 flex flex-col relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] uppercase tracking-widest px-4 py-1">
-                Most Popular
-              </span>
-              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-                Essential
-              </p>
-              <h3 className="text-2xl serif mb-2">Shudh Desi Wedding</h3>
-              <p className="text-3xl serif mb-6">
-                From <span className="text-primary">$4,800</span>
-              </p>
-              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-                All the essentials and a bit more.
-              </p>
-              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  1 Lead + 1 Associate Photographer
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Engagement Shoot
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  24 × 36 Wall Art
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  8×8 Album
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Much More Options
-                </li>
-              </ul>
-              <Link
-                href="/booking"
-                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-              >
-                Book Now
-              </Link>
-            </div>
-          </AnimatedSection>
-
-          {/* Package 3 */}
-          <AnimatedSection delay="stagger-2">
-            <div className="border border-outline-variant/30 p-10 flex flex-col">
-              <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-3">
-                Intimate
-              </p>
-              <h3 className="text-2xl serif mb-2">Band Bajaa Budget</h3>
-              <p className="text-3xl serif mb-6">
-                From <span className="text-primary">$4,000</span>
-              </p>
-              <p className="text-on-surface-variant font-light text-sm mb-8 leading-relaxed">
-                For the elopers and the intimate celebrations.
-              </p>
-              <ul className="space-y-3 text-sm text-on-surface-variant mb-10 flex-1">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  1 Lead + 1 Associate Photographer
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  Complimentary Engagement Shoot
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5">✦</span>
-                  All Edited Images on Gallery
-                </li>
-              </ul>
-              <Link
-                href="/booking"
-                className="block text-center bg-primary text-on-primary py-4 text-[11px] uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
-              >
-                Book Now
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-
-        {/* A La Carte */}
-        <AnimatedSection>
-          <div className="mt-20 max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl serif mb-8">À La Carte Options</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
-              {[
-                "Engagement Shoot (2–3 hrs)",
-                "Concept Engagement Shoot (4+ hrs)",
-                "Additional Photographer",
-                "24 × 36 Premium Wall Art",
-                "Drone Photography",
-                "Same Day Slideshow",
-                "Sneak Peek in 2 Weeks",
-                "Film Camera Prints",
-                "Wedding Albums — from $600",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 py-3 border-b border-outline-variant/20"
-                >
-                  <span className="text-secondary text-xs">✦</span>
-                  <span className="text-sm text-on-surface-variant">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </AnimatedSection>
-      </section>
-
-      {/* FAQ */}
-      <section className="px-8 max-w-4xl mx-auto mb-40">
-        <AnimatedSection>
-          <div className="text-center mb-20">
-            <span className="tracking-widest uppercase text-[11px] text-secondary block mb-6">Common Questions</span>
-            <h2 className="text-4xl md:text-5xl serif mb-6">Frequently <span className="italic">Asked</span></h2>
-          </div>
-        </AnimatedSection>
-
-        <div className="space-y-0">
-          {faqs.map((faq, i) => (
-            <AnimatedSection key={faq.question} delay={`stagger-${Math.min(i % 4 + 1, 4)}`}>
-              <details className="group border-b border-outline-variant/20 py-8 cursor-pointer">
-                <summary className="flex justify-between items-center list-none text-lg font-serif pr-8">
-                  <span>{faq.question}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-secondary group-open:rotate-45 transition-transform duration-300"><path d="M12 5v14" /><path d="M5 12h14" /></svg>
-                </summary>
-                <p className="text-on-surface-variant text-sm leading-relaxed mt-4 max-w-2xl">{faq.answer}</p>
-              </details>
-            </AnimatedSection>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-primary-container py-40 px-8 text-center mb-40">
-        <AnimatedSection>
-          <h2 className="text-surface text-4xl md:text-6xl serif italic mb-8 max-w-3xl mx-auto leading-tight">Ready to create something timeless?</h2>
-          <p className="text-secondary-fixed-dim font-light leading-relaxed mb-10 max-w-lg mx-auto">Every great image begins with a conversation. Let's discuss your vision.</p>
-          <Link href="/booking" className="inline-flex items-center gap-4 group">
-            <span className="text-surface tracking-widest uppercase text-[11px] font-bold border-b border-surface/40 pb-1 group-hover:border-surface transition-colors">Start a Conversation</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-surface group-hover:translate-x-2 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-          </Link>
-        </AnimatedSection>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-surface-container w-full py-20 px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
           <div>
-            <div className="font-serif text-lg tracking-widest uppercase text-primary mb-6">Akshay Kumar Studios</div>
-            <p className="font-body text-[13px] text-secondary max-w-xs leading-relaxed">
-              Halifax Fine Art Photography. <br />
-              Preserving moments through the lens of timelessness.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="flex flex-col gap-4">
-              <span className="font-label tracking-widest uppercase text-[10px] font-bold text-primary mb-2">Explore</span>
-              <Link href="/topics" className="text-[13px] text-secondary hover:text-primary transition-all">Journal</Link>
-              <Link href="/portfolio" className="text-[13px] text-secondary hover:text-primary transition-all">Portfolio</Link>
-              <Link href="/booking" className="text-[13px] text-secondary hover:text-primary transition-all">Booking</Link>
-            </div>
-            <div className="flex flex-col gap-4">
-              <span className="font-label tracking-widest uppercase text-[10px] font-bold text-primary mb-2">Connect</span>
-              <a href="#" className="text-[13px] text-secondary hover:text-primary transition-all">Instagram</a>
-              <Link href="/booking" className="text-[13px] text-secondary hover:text-primary transition-all">Contact</Link>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between items-start md:items-end h-full">
-            <div className="flex items-center gap-2 group cursor-pointer">
-              <Link href="/booking" className="font-label tracking-widest uppercase text-[11px] text-primary">Inquire</Link>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 transition-transform group-hover:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-            </div>
-            <div className="mt-12 md:mt-0 font-body text-[11px] text-secondary md:text-right">
-              © 2024 Akshay Kumar Studios. <br />
-              Halifax Fine Art Photography.
-            </div>
+            {faqs.map(([q, a]) => (
+              <details key={q}>
+                <summary>{q}</summary>
+                <p>{a}</p>
+              </details>
+            ))}
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </>
   );
 }

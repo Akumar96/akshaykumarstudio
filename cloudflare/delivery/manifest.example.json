@@ -1,0 +1,12 @@
+{
+  "kind": "client",
+  "project": "example-property",
+  "title": "Your property photographs",
+  "note": "Use Listings for the agreed listing platform, Website for screens, and Marketing for your designer. Usage follows your project agreement.",
+  "expiresAt": "2027-01-01T00:00:00Z",
+  "files": [
+    { "id": "listings", "label": "Listings", "description": "Prepared for the platform agreed in your brief.", "name": "property-listings.zip", "key": "projects/example-property/listings.zip" },
+    { "id": "website", "label": "Website", "description": "Smaller files for screens.", "name": "property-website.zip", "key": "projects/example-property/website.zip" },
+    { "id": "marketing", "label": "Marketing", "description": "High-resolution files for your designer.", "name": "property-marketing.zip", "key": "projects/example-property/marketing.zip" }
+  ]
+}

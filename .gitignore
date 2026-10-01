@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+!.env.example
+# Private delivery exports
+/deliveries/
+/cloudflare/delivery/.wrangler/
+/cloudflare/delivery/.dev.vars
+
+# Private studio records and local owner credential
+/.studio/

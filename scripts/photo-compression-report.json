@@ -1,0 +1,458 @@
+[
+  {
+    "original": "/photos/city/DSC01984.JPG",
+    "src": "/photos/city/DSC01984.webp",
+    "originalBytes": 25689950,
+    "webBytes": 329476,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/city/DSC01989.JPG",
+    "src": "/photos/city/DSC01989.webp",
+    "originalBytes": 33970868,
+    "webBytes": 679718,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/city/DSC01991.JPG",
+    "src": "/photos/city/DSC01991.webp",
+    "originalBytes": 28975231,
+    "webBytes": 505362,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/city/DSC02005.JPG",
+    "src": "/photos/city/DSC02005.webp",
+    "originalBytes": 25819603,
+    "webBytes": 286480,
+    "width": 1600,
+    "height": 2400
+  },
+  {
+    "original": "/photos/city/DSC02205.jpg",
+    "src": "/photos/city/DSC02205.webp",
+    "originalBytes": 39287683,
+    "webBytes": 417220,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/city/DSC03293.JPG",
+    "src": "/photos/city/DSC03293.webp",
+    "originalBytes": 26927466,
+    "webBytes": 368880,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/events/DSC02757.JPG",
+    "src": "/photos/events/DSC02757.webp",
+    "originalBytes": 24794229,
+    "webBytes": 225280,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/events/DSC02885.JPG",
+    "src": "/photos/events/DSC02885.webp",
+    "originalBytes": 25453233,
+    "webBytes": 147146,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/family/DSC08614.jpg",
+    "src": "/photos/family/DSC08614.webp",
+    "originalBytes": 433712,
+    "webBytes": 90238,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/family/DSC08969.jpg",
+    "src": "/photos/family/DSC08969.webp",
+    "originalBytes": 556719,
+    "webBytes": 173688,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/family/DSC09877.jpg",
+    "src": "/photos/family/DSC09877.webp",
+    "originalBytes": 672089,
+    "webBytes": 207292,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/family/DSC09884.jpg",
+    "src": "/photos/family/DSC09884.webp",
+    "originalBytes": 576765,
+    "webBytes": 165234,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/me/Pinch_shoot_Headshot.jpeg",
+    "src": "/photos/me/Pinch_shoot_Headshot.webp",
+    "originalBytes": 47674,
+    "webBytes": 21256,
+    "width": 854,
+    "height": 569
+  },
+  {
+    "original": "/photos/me/Pinch_shoot_image2.jpeg",
+    "src": "/photos/me/Pinch_shoot_image2.webp",
+    "originalBytes": 75588,
+    "webBytes": 44550,
+    "width": 854,
+    "height": 569
+  },
+  {
+    "original": "/photos/nature/DSC01069.jpg",
+    "src": "/photos/nature/DSC01069.webp",
+    "originalBytes": 26874593,
+    "webBytes": 247358,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01165-2.jpg",
+    "src": "/photos/nature/DSC01165-2.webp",
+    "originalBytes": 28382140,
+    "webBytes": 97718,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01206.JPG",
+    "src": "/photos/nature/DSC01206.webp",
+    "originalBytes": 31936634,
+    "webBytes": 513440,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01375-3.jpg",
+    "src": "/photos/nature/DSC01375-3.webp",
+    "originalBytes": 949928,
+    "webBytes": 141406,
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "original": "/photos/nature/DSC01520.jpg",
+    "src": "/photos/nature/DSC01520.webp",
+    "originalBytes": 33752710,
+    "webBytes": 218460,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01535.JPG",
+    "src": "/photos/nature/DSC01535.webp",
+    "originalBytes": 22746224,
+    "webBytes": 185906,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01549.JPG",
+    "src": "/photos/nature/DSC01549.webp",
+    "originalBytes": 28044938,
+    "webBytes": 232332,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01643.JPG",
+    "src": "/photos/nature/DSC01643.webp",
+    "originalBytes": 22407827,
+    "webBytes": 126610,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01668.JPG",
+    "src": "/photos/nature/DSC01668.webp",
+    "originalBytes": 33226957,
+    "webBytes": 471698,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01697.JPG",
+    "src": "/photos/nature/DSC01697.webp",
+    "originalBytes": 24551189,
+    "webBytes": 199174,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC01972.JPG",
+    "src": "/photos/nature/DSC01972.webp",
+    "originalBytes": 22195884,
+    "webBytes": 154854,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC02053.JPG",
+    "src": "/photos/nature/DSC02053.webp",
+    "originalBytes": 25640299,
+    "webBytes": 330610,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC02137-3.jpg",
+    "src": "/photos/nature/DSC02137-3.webp",
+    "originalBytes": 20869823,
+    "webBytes": 85230,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC03402.jpg",
+    "src": "/photos/nature/DSC03402.webp",
+    "originalBytes": 24793408,
+    "webBytes": 165370,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC03629-2.jpg",
+    "src": "/photos/nature/DSC03629-2.webp",
+    "originalBytes": 42400118,
+    "webBytes": 514632,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC03629.jpg",
+    "src": "/photos/nature/DSC03629.webp",
+    "originalBytes": 42400035,
+    "webBytes": 514632,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC03932.JPG",
+    "src": "/photos/nature/DSC03932.webp",
+    "originalBytes": 29234906,
+    "webBytes": 522364,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/nature/DSC04271.JPG",
+    "src": "/photos/nature/DSC04271.webp",
+    "originalBytes": 24126279,
+    "webBytes": 146006,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/portraits/DSC06687.jpg",
+    "src": "/photos/portraits/DSC06687.webp",
+    "originalBytes": 18783623,
+    "webBytes": 86010,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/portraits/DSC06721.jpg",
+    "src": "/photos/portraits/DSC06721.webp",
+    "originalBytes": 22706653,
+    "webBytes": 123932,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/portraits/DSC06779.jpg",
+    "src": "/photos/portraits/DSC06779.webp",
+    "originalBytes": 16741793,
+    "webBytes": 94132,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05542.jpg",
+    "src": "/photos/wedding-1/DSC05542.webp",
+    "originalBytes": 58240431,
+    "webBytes": 344906,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05582.jpg",
+    "src": "/photos/wedding-1/DSC05582.webp",
+    "originalBytes": 53923366,
+    "webBytes": 334096,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05602.jpg",
+    "src": "/photos/wedding-1/DSC05602.webp",
+    "originalBytes": 29796948,
+    "webBytes": 348278,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05790.jpg",
+    "src": "/photos/wedding-1/DSC05790.webp",
+    "originalBytes": 62137212,
+    "webBytes": 353000,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05913.JPG",
+    "src": "/photos/wedding-1/DSC05913.webp",
+    "originalBytes": 44459668,
+    "webBytes": 419888,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-1/DSC05940.JPG",
+    "src": "/photos/wedding-1/DSC05940.webp",
+    "originalBytes": 46082038,
+    "webBytes": 424550,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-2/DSC02051.JPG",
+    "src": "/photos/wedding-2/DSC02051.webp",
+    "originalBytes": 24439368,
+    "webBytes": 299966,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-2/DSC02059.jpg",
+    "src": "/photos/wedding-2/DSC02059.webp",
+    "originalBytes": 12273549,
+    "webBytes": 239664,
+    "width": 1246,
+    "height": 2400
+  },
+  {
+    "original": "/photos/wedding-2/DSC02061.jpg",
+    "src": "/photos/wedding-2/DSC02061.webp",
+    "originalBytes": 27461428,
+    "webBytes": 195774,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-2/DSC02070.JPG",
+    "src": "/photos/wedding-2/DSC02070.webp",
+    "originalBytes": 24041312,
+    "webBytes": 259534,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-3/C0526.MP4.02_32_04_22.Still003.jpg",
+    "src": "/photos/wedding-3/C0526.MP4.02_32_04_22.Still003.webp",
+    "originalBytes": 17719181,
+    "webBytes": 421808,
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "original": "/photos/wedding-3/DSC03342.jpg",
+    "src": "/photos/wedding-3/DSC03342.webp",
+    "originalBytes": 1842781,
+    "webBytes": 255022,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/wedding-3/DSC03366.jpg",
+    "src": "/photos/wedding-3/DSC03366.webp",
+    "originalBytes": 1484611,
+    "webBytes": 181124,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/wedding-3/DSC04583.jpg",
+    "src": "/photos/wedding-3/DSC04583.webp",
+    "originalBytes": 1993142,
+    "webBytes": 233534,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/wedding-3/DSC04906.jpg",
+    "src": "/photos/wedding-3/DSC04906.webp",
+    "originalBytes": 1736749,
+    "webBytes": 172080,
+    "width": 1365,
+    "height": 2048
+  },
+  {
+    "original": "/photos/wedding-3/DSC05081.jpg",
+    "src": "/photos/wedding-3/DSC05081.webp",
+    "originalBytes": 2166173,
+    "webBytes": 259934,
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_01_59_13.Still014.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_01_59_13.Still014.webp",
+    "originalBytes": 1498961,
+    "webBytes": 175038,
+    "width": 2048,
+    "height": 1152
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_03_29_02.Still023.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_03_29_02.Still023.webp",
+    "originalBytes": 2400997,
+    "webBytes": 439862,
+    "width": 2048,
+    "height": 1152
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_03_36_01.Still025.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_03_36_01.Still025.webp",
+    "originalBytes": 1814475,
+    "webBytes": 274572,
+    "width": 2048,
+    "height": 1152
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_25_17_09.Still032.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_25_17_09.Still032.webp",
+    "originalBytes": 1267826,
+    "webBytes": 82900,
+    "width": 2048,
+    "height": 1152
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_35_51_25.Still046.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_35_51_25.Still046.webp",
+    "originalBytes": 1355541,
+    "webBytes": 53650,
+    "width": 2048,
+    "height": 1152
+  },
+  {
+    "original": "/photos/wedding-3/Sequence 01.00_51_13_02.Still004.jpg",
+    "src": "/photos/wedding-3/Sequence 01.00_51_13_02.Still004.webp",
+    "originalBytes": 1480241,
+    "webBytes": 263848,
+    "width": 2048,
+    "height": 1152
+  }
+]

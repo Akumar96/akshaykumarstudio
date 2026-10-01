@@ -1,36 +1,27 @@
 import type { Metadata } from "next";
-import { Noto_Serif, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const notoSerif = Noto_Serif({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-
+import Footer from "@/components/Footer";
 export const metadata: Metadata = {
-  title: "Akshay Kumar Studios | Halifax Fine Art Photography",
-  description: "A boutique photography and film studio specializing in high-end editorial storytelling and maritime heritage documentation.",
+  title: {
+    default: "Akshay Kumar Studios — Spaces, Properties & Hotels",
+    template: "%s — Akshay Kumar Studios",
+  },
+  description:
+    "Commercial, real estate and hotel photography and film by Akshay Kumar. Based in Halifax, Nova Scotia. Available for travel.",
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${notoSerif.variable} ${manrope.variable} antialiased`}
-    >
-      <body className="bg-surface text-on-surface">
+    <html lang="en">
+      <body>
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
         <Navbar />
-        <main className="pt-24">{children}</main>
+        <main id="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );

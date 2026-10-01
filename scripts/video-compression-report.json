@@ -1,0 +1,14 @@
+{
+  "originalBytes": 255216940,
+  "webBytes": 93280841,
+  "reductionPercent": 63.45,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationSeconds": 178.282993,
+  "videoCodec": "H.264",
+  "videoTargetKbps": 4000,
+  "audio": "Original AAC, stream copied",
+  "fastStart": true,
+  "originalPreserved": "/Users/akshaykumar/Downloads/Peru Edit.mp4"
+}
