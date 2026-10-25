@@ -70,3 +70,7 @@ See [the setup and launch guide](docs/COMMERCE.md) for configuration, private fi
 Open `/studio` to manage projects through Prequalify, Presell, Plan, Present and Pick up. Owner-only access, persistent local records and editable stage checklists are included. See [studio setup and storage notes](docs/STUDIO.md). This backend runs on a single persistent Node server, including your secondary PC.
 
 Invoice records now include **Documents & email**. The Presell stage can create an invoice from its saved offer. Edit the agreement, download both PDFs, or configure SMTP for owner-confirmed sending. See docs/STUDIO.md for setup and limitations. No AI service is required.
+
+## Working across machines
+
+Clone this repository on any machine and run `npm ci`. `.env*`, `.studio/`, `deliveries/` and `cloudflare/delivery/.dev.vars` are gitignored, so copy them to each machine by hand; start from `.env.example` and `cloudflare/delivery/manifest.example.json`.
