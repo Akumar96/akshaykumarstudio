@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <section className="home-intro shell">
         <div className="intro-meta eyebrow">
-          <span>Commercial spaces · Real estate · Hotels</span>
-          <span>Halifax, NS · Available for travel</span>
+          <span>Photography & film · 3D printing · Engineering & robotics</span>
+          <span>Halifax, NS · Made in Canada · Available for travel</span>
         </div>
         <div className="home-heading">
           <h1>
@@ -63,6 +63,38 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className="shell services-preview section-space">
+        <span className="eyebrow accent">The wider studio</span>
+        <div className="service-links">
+          {[
+            {
+              href: "/films/peru",
+              title: "Film",
+              text: "Travel, landscape and motion for places and brands.",
+              number: "04",
+            },
+            {
+              href: "/booking",
+              title: "3D printing & manufacturing",
+              text: "Prototypes and small production runs, printed and made in Canada.",
+              number: "05",
+            },
+            {
+              href: "/ai",
+              title: "Engineering & robotics",
+              text: "Engineering-quality development: tools, automation and our own private AI.",
+              number: "06",
+            },
+          ].map((item) => (
+            <Link href={item.href} key={item.number}>
+              <span className="eyebrow">{item.number}</span>
+              <h3>{item.title}</h3>
+              <span className="service-description">{item.text}</span>
+              <Arrow diagonal />
+            </Link>
+          ))}
+        </div>
+      </section>
       <section className="studio-note">
         <div className="shell studio-note-inner">
           <span className="eyebrow">A considered view</span>
@@ -79,6 +111,12 @@ export default function Home() {
                 I’m Akshay, a photographer and filmmaker based in Halifax. My
                 focus is commercial spaces, real estate and hotels: photographs
                 that help someone understand a place before they arrive.
+              </p>
+              <p>
+                The studio is larger than the camera. We also 3D-print and
+                manufacture in Canada, and build engineering-quality software,
+                automation and robotics—including a private AI that runs on our
+                own hardware.
               </p>
               <p>
                 We’ll plan around your space, its light, and where the images

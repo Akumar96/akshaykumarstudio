@@ -9,6 +9,7 @@ const links = [
   { href: "/info", label: "Information" },
   { href: "/prints", label: "Prints" },
   { href: "/clients", label: "Clients" },
+  { href: "/ai", label: "Our AI" },
 ];
 export default function Navbar() {
   const pathname = usePathname();

@@ -22,7 +22,7 @@ export default function Footer() {
             <br />
             Based in Halifax, Nova Scotia.
             <br />
-            Commercial · Real estate · Hotels.
+            Commercial · Real estate · Hotels · 3D printing · Engineering.
           </p>
           <div>
             <a href="mailto:a.kumar.uwo@gmail.com">a.kumar.uwo@gmail.com</a>
@@ -39,6 +39,7 @@ export default function Footer() {
             <Link href="/info">Information</Link>
             <Link href="/prints">Prints</Link>
             <Link href="/clients">Client delivery</Link>
+            <Link href="/ai">Our AI</Link>
             <Link href="/topics">Journal</Link>
           </div>
           <span>A sense of place.</span>

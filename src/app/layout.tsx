@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s — Akshay Kumar Studios",
   },
   description:
-    "Commercial, real estate and hotel photography and film by Akshay Kumar. Based in Halifax, Nova Scotia. Available for travel.",
+    "Commercial, real estate and hotel photography and film, 3D printing and manufacturing, and engineering-quality development and robotics by Akshay Kumar. Based in Halifax, Nova Scotia. Available for travel.",
 };
 export default function RootLayout({
   children,

@@ -48,3 +48,6 @@ next-env.d.ts
 
 # Private studio records and local owner credential
 /.studio/
+
+# Local dev server logs
+*.log
